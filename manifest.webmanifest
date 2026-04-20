@@ -1,0 +1,1 @@
+{"name":"LibreTV StreamVault","short_name":"LibreTV","description":"Toda la TV en vivo en tu mano","start_url":"./","display":"standalone","background_color":"#0d0d0d","theme_color":"#00E5FF","lang":"en","scope":"/streamvault/","orientation":"any","icons":[{"src":"logo.webp","sizes":"512x512","type":"image/webp","purpose":"any maskable"}]}
