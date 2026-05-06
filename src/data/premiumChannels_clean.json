@@ -1,0 +1,1626 @@
+[
+  {
+    "id": "ch-_en-vivo_argentinisima_",
+    "name": "Argentinísima",
+    "logo": "https://bestleague.world/img/arsat.png",
+    "url": "https://cdn.cvattv.com.ar/live/c6eds/Argentinisima/SA_Live_dash_enc_C/Argentinisima.mpd",
+    "category": "Locales",
+    "streamType": "dash",
+    "drm": {
+      "keyId": "a6243f46366445ebbf3117ec27365481",
+      "key": "81667cdc3bcf19a6a66c0919fa00a20b"
+    },
+    "country": "AR",
+    "tvgId": "ArgentinisimaSatelital.ar"
+  },
+  {
+    "id": "ch-_en-vivo_canal12cordoba_",
+    "name": "Canal 12 de Córdoba",
+    "logo": "https://bestleague.world/img/docor.png",
+    "url": "https://cdn.cvattv.com.ar/live/c6eds/Canal_12_CBA/SA_Live_dash_enc_C/Canal_12_CBA.mpd",
+    "category": "Locales",
+    "streamType": "dash",
+    "drm": {
+      "keyId": "90422640d3e846159fa450f83870ed4a",
+      "key": "abb3cd94aece1a462df25a8f21085cca"
+    },
+    "country": "AR",
+    "tvgId": ""
+  },
+  {
+    "id": "ch-_en-vivo_canaldelaciudad",
+    "name": "Canal de la Ciudad",
+    "logo": "https://bestleague.world/img/canaldelaciudad.webp",
+    "url": "https://cdn.cvattv.com.ar/live/c6eds/Canal_de_la_ciudad/SA_Live_dash_enc_C/Canal_de_la_ciudad.mpd",
+    "category": "Locales",
+    "streamType": "dash",
+    "drm": {
+      "keyId": "5ee7842b3cf24d1dba088365fa5d0543",
+      "key": "69cec006409823c06fbf2866a231b4f7"
+    },
+    "country": "AR",
+    "tvgId": "CanalDeLaCiudad.ar"
+  },
+  {
+    "id": "ch-_en-vivo_encuentro",
+    "name": "Encuentro",
+    "logo": "https://bestleague.world/img/encuentro.webp",
+    "url": "https://cdn.cvattv.com.ar/live/c6eds/Encuentro/SA_Live_dash_enc_C/Encuentro.mpd",
+    "category": "Locales",
+    "streamType": "dash",
+    "drm": {
+      "keyId": "ac3ae78beb64478ab390b4ad70e3e0c9",
+      "key": "c7d669761c3516d852a0edf9e07c9198"
+    },
+    "country": "AR",
+    "tvgId": "Encuentro.ar"
+  },
+  {
+    "id": "ch-_en-vivo_telefe",
+    "name": "Telefe",
+    "logo": "https://bestleague.world/img/telefe.png",
+    "url": "https://cdn.cvattv.com.ar/live/c6eds/TelefeHD/SA_Live_dash_enc_C/TelefeHD.mpd",
+    "category": "Locales",
+    "streamType": "dash",
+    "drm": {
+      "keyId": "3cec1b1ea9799dda5596e64f37e5ed20",
+      "key": "c69f3afde2085dcaaaddbf55246a0323"
+    },
+    "country": "AR",
+    "tvgId": "Telefe.ar"
+  },
+  {
+    "id": "ch-_en-vivo_el-trece",
+    "name": "El Trece",
+    "logo": "https://bestleague.world/img/eltrece.webp",
+    "url": "https://cdn.cvattv.com.ar/live/c3eds/ArtearHD/SA_Live_dash_enc_C/ArtearHD.mpd",
+    "category": "Locales",
+    "streamType": "dash",
+    "drm": {
+      "keyId": "5179017f49326d14af0a9ceec831aee6",
+      "key": "09b4a463b029ebc28a288bed2da70a76"
+    },
+    "country": "AR",
+    "tvgId": "ELTrece.ar"
+  },
+  {
+    "id": "ch-_en-vivo_el-nueve",
+    "name": "El Nueve",
+    "logo": "https://bestleague.world/img/nueve.webp",
+    "url": "https://cdn.cvattv.com.ar/live/c3eds/Canal9/SA_Live_dash_enc_C/Canal9.mpd",
+    "category": "Locales",
+    "streamType": "dash",
+    "drm": {
+      "keyId": "24f4ff211136ae6512a1b552200db405",
+      "key": "602122f8426c5c942b8c18d299cc6020"
+    },
+    "country": "AR",
+    "tvgId": "ELNueve.ar"
+  },
+  {
+    "id": "ch-_en-vivo_america-tv",
+    "name": "América TV",
+    "logo": "https://bestleague.world/img/america.webp",
+    "url": "https://cdn.cvattv.com.ar/live/c3eds/AmericaTV/SA_Live_dash_enc_C/AmericaTV.mpd",
+    "category": "Locales",
+    "streamType": "dash",
+    "drm": {
+      "keyId": "8ea235ce0826408b221c498115a9b62d",
+      "key": "7aa9266ed91ea4510483370029dfcf45"
+    },
+    "country": "AR",
+    "tvgId": "AmericaTV.ar"
+  },
+  {
+    "id": "ch-_en-vivo_tv-publica",
+    "name": "TV Pública",
+    "logo": "https://bestleague.world/img/tvpublica.webp",
+    "url": "https://cdn.cvattv.com.ar/live/c6eds/Canal7/SA_Live_dash_enc_C/Canal7.mpd",
+    "category": "Locales",
+    "streamType": "dash",
+    "drm": {
+      "keyId": "cc8c82ac2ec7e9799527c29db7354e81",
+      "key": "cc4aae173dd2ef17ae26be3f7ae87662"
+    },
+    "country": "AR",
+    "tvgId": "TelevisionPublica.ar"
+  },
+  {
+    "id": "ch-_en-vivo_volver",
+    "name": "Volver",
+    "logo": "https://bestleague.world/img/volver.webp",
+    "url": "https://cdn.cvattv.com.ar/live/c6eds/Volver/SA_Live_dash_enc_C/Volver.mpd",
+    "category": "Locales",
+    "streamType": "dash",
+    "drm": {
+      "keyId": "194e53184a424ce6989ad82c5f28fbc5",
+      "key": "65d60c5cc4de031172be0a6a51edbdfe"
+    },
+    "country": "AR",
+    "tvgId": "Volver.ar"
+  },
+  {
+    "id": "ch-_eventos_sin-chat__r_L2h0bWwvZmwvP2dldD1VRUZMUVY5UVFVdEI_",
+    "name": "Pakapaka",
+    "logo": "https://bestleague.world/img/pakapaka.png",
+    "url": "https://cdn.cvattv.com.ar/live/c6eds/PAKA_PAKA/SA_Live_dash_enc_C/PAKA_PAKA.mpd",
+    "category": "Infantiles",
+    "streamType": "dash",
+    "drm": {
+      "keyId": "334001b2f2644df9bdf35e92d2b89f8f",
+      "key": "475ec87d86ed0636dbb6d6d9d4a43bb7"
+    },
+    "country": "AR",
+    "tvgId": "Pakapaka.ar"
+  },
+  {
+    "id": "ch-_en-vivo_cinear",
+    "name": "Cine AR",
+    "logo": "https://bestleague.world/img/cinear.png",
+    "url": "https://cdn.cvattv.com.ar/live/c6eds/INCAA_Tv/SA_Live_dash_enc_C/INCAA_Tv.mpd",
+    "category": "Películas",
+    "streamType": "dash",
+    "drm": {
+      "keyId": "d44f40e49d2945c1a3701c0885ff0b00",
+      "key": "6382b6279087402714b6824688c456df"
+    },
+    "country": "AR",
+    "tvgId": "CineAr.ar"
+  },
+  {
+    "id": "ch-_en-vivo_deportv",
+    "name": "DeporTV",
+    "logo": "https://bestleague.world/img/deportv.webp",
+    "url": "https://cdn.cvattv.com.ar/live/c3eds/DeporTVHD/SA_Live_dash_enc_C/DeporTVHD.mpd",
+    "category": "Deportes",
+    "streamType": "dash",
+    "drm": {
+      "keyId": "f362097815892a4b83950f1d106ff0b2",
+      "key": "4349e42e81c31a8389f4a42fcd298928"
+    },
+    "country": "AR",
+    "tvgId": "AmericaSports.ar"
+  },
+  {
+    "id": "ch-_en-vivo_tyc-sports",
+    "name": "TyC Sports",
+    "logo": "https://bestleague.world/img/tyc.webp",
+    "url": "https://cdn.cvattv.com.ar/live/c7eds/TyCSport/SA_Live_dash_enc_C/TyCSport.mpd",
+    "category": "Deportes",
+    "streamType": "dash",
+    "drm": {
+      "keyId": "2b21c8fa9a329cce311a4c4a4aa996a1",
+      "key": "cc23ea1fb32629f9e1f48c8deeae3e5b"
+    },
+    "country": "AR",
+    "tvgId": "TyCSports.ar"
+  },
+  {
+    "id": "ch-_en-vivo_cronica",
+    "name": "Crónica TV",
+    "logo": "https://bestleague.world/img/cronica.png",
+    "url": "https://cdn.cvattv.com.ar/live/c7eds/CronicaTV/SA_Live_dash_enc_C/CronicaTV.mpd",
+    "category": "Noticias",
+    "streamType": "dash",
+    "drm": {
+      "keyId": "745e7abcc90d41ab706b2ac2f4371da3",
+      "key": "50acd9d19d1361cb4a8a13a867bdc352"
+    },
+    "country": "AR",
+    "tvgId": "CronicaTV.ar"
+  },
+  {
+    "id": "ch-_en-vivo_c5n",
+    "name": "C5N",
+    "logo": "https://bestleague.world/img/c5n.webp",
+    "url": "https://cdn.cvattv.com.ar/live/c7eds/C5N/SA_Live_dash_enc_C/C5N.mpd",
+    "category": "Noticias",
+    "streamType": "dash",
+    "drm": {
+      "keyId": "050df5c6e78c774e78c3e99eef8a1b29",
+      "key": "0e4141d6ab21a36cbc4da777ab3096d4"
+    },
+    "country": "AR",
+    "tvgId": "C5N.ar"
+  },
+  {
+    "id": "ch-_en-vivo_a24",
+    "name": "A24",
+    "logo": "https://bestleague.world/img/a24.webp",
+    "url": "https://cdn.cvattv.com.ar/live/c7eds/America24/SA_Live_dash_enc_C/America24.mpd",
+    "category": "Noticias",
+    "streamType": "dash",
+    "drm": {
+      "keyId": "3b1b027dd011af20fd9956c16dc084fb",
+      "key": "45f75aacf06593c9b693fe427c67e5b8"
+    },
+    "country": "AR",
+    "tvgId": "A24.ar"
+  },
+  {
+    "id": "ch-_en-vivo_tn",
+    "name": "TN",
+    "logo": "https://bestleague.world/img/tn.png",
+    "url": "https://cdn.cvattv.com.ar/live/c7eds/TodoNoticias/SA_Live_dash_enc_C/TodoNoticias.mpd",
+    "category": "Noticias",
+    "streamType": "dash",
+    "drm": {
+      "keyId": "7ceb1cd0622cd7e88fcdc99fe3a55de6",
+      "key": "951637093d41c7388a1ef3f620cfea21"
+    },
+    "country": "AR",
+    "tvgId": "TN.ar"
+  },
+  {
+    "id": "ch-_en-vivo_canal-26",
+    "name": "Canal 26",
+    "logo": "https://bestleague.world/img/canal26.webp",
+    "url": "https://cdn.cvattv.com.ar/live/c6eds/26_TV_HD/SA_Live_dash_enc_C/26_TV_HD.mpd",
+    "category": "Noticias",
+    "streamType": "dash",
+    "drm": {
+      "keyId": "e32aaa4b67430b3b51be1efce5a74ac5",
+      "key": "ad60c5e1d378a97271bf8688f094d092"
+    },
+    "country": "AR",
+    "tvgId": "Canal26.ar"
+  },
+  {
+    "id": "ch-_en-vivo_ln",
+    "name": "La Nación",
+    "logo": "https://bestleague.world/img/ln.webp",
+    "url": "https://cdn.cvattv.com.ar/live/c7eds/La_Nacion/SA_Live_dash_enc_C/La_Nacion.mpd",
+    "category": "Noticias",
+    "streamType": "dash",
+    "drm": {
+      "keyId": "f4eade7bbc39b25402acfa301bbad04a",
+      "key": "a74d1df4235a74878327aa8d53ff283c"
+    },
+    "country": "AR",
+    "tvgId": "LN+.ar"
+  },
+  {
+    "id": "ch-_en-vivo_nettv",
+    "name": "Net TV",
+    "logo": "https://bestleague.world/img/nettv.webp",
+    "url": "https://cdn.cvattv.com.ar/live/c6eds/Net_TV/SA_Live_dash_enc_C/Net_TV.mpd",
+    "category": "Locales",
+    "streamType": "dash",
+    "drm": {
+      "keyId": "89d433166edd31d56df2a59df8ec6704",
+      "key": "b2015faded0a456d10aa8db1b4cbac68"
+    },
+    "country": "AR",
+    "tvgId": "NetTV.ar"
+  },
+  {
+    "id": "ch-_en-vivo_ip",
+    "name": "Ip Noticias",
+    "logo": "https://bestleague.world/img/ip.webp",
+    "url": "https://cdn.cvattv.com.ar/live/c7eds/Investigacion_Periodistica/SA_Live_dash_enc_C/Investigacion_Periodistica.mpd",
+    "category": "Noticias",
+    "streamType": "dash",
+    "drm": {
+      "keyId": "5299f96f873aa0f0e47edc4e15784717",
+      "key": "9d53176b0969492f2d93f1867be1dce1"
+    },
+    "country": "AR",
+    "tvgId": "24/7CanaldeNoticias.ar"
+  },
+  {
+    "id": "ch-_en-vivo_dtv",
+    "name": "Diputados TV",
+    "logo": "https://bestleague.world/img/dtv.webp",
+    "url": "https://cdn.cvattv.com.ar/live/c6eds/Diputados_TV/SA_Live_dash_enc_C/Diputados_TV.mpd",
+    "category": "Noticias",
+    "streamType": "dash",
+    "drm": {
+      "keyId": "9666b195171442afd4551a8de01291a6",
+      "key": "1c0061df9b4b098e40355167e97cfbf0"
+    },
+    "country": "AR",
+    "tvgId": "ConexionEducativa.ar"
+  },
+  {
+    "id": "ch-_en-vivo_c9n",
+    "name": "C9N",
+    "logo": "https://bestleague.world/img/c9n.png",
+    "url": "https://cdn.cvattv.com.ar/live/c5eds/C9N_C4/SA_Live_dash_enc_C/C9N_C4.mpd",
+    "category": "Noticias",
+    "streamType": "dash",
+    "drm": {
+      "keyId": "646700eeb14cadfa0543a20cf413d37e",
+      "key": "4fc037c462023764624d8446442cbbca"
+    },
+    "country": "PY",
+    "tvgId": "C9N.py"
+  },
+  {
+    "id": "ch-_eventos_sin-chat__r_L2h0bWwvZmwvP2dldD1SV3hmUjJGeVlXZGw_",
+    "name": "El Garage TV",
+    "logo": "https://bestleague.world/img/garagetv.webp",
+    "url": "https://cdn.cvattv.com.ar/live/c6eds/El_Garage/SA_Live_dash_enc_C/El_Garage.mpd",
+    "category": "Locales",
+    "streamType": "dash",
+    "drm": {
+      "keyId": "03d1dfb8df034d8b81e57753df00a36d",
+      "key": "08d83660db4a73bb1d61d60b09df5f4d"
+    },
+    "country": "AR",
+    "tvgId": "ElGarageTv.ar"
+  },
+  {
+    "id": "ch-_en-vivo_ciudad-magazine",
+    "name": "Ciudad Magazine",
+    "logo": "https://bestleague.world/img/ciudad.webp",
+    "url": "https://cdn.cvattv.com.ar/live/c3eds/Magazine/SA_Live_dash_enc_C/Magazine.mpd",
+    "category": "Series y Entretenimiento",
+    "streamType": "dash",
+    "drm": {
+      "keyId": "4f1235069d34c22cb73d9b78bae15587",
+      "key": "55e068ff6b152e34c66dc639b38e8692"
+    },
+    "country": "AR",
+    "tvgId": "CiudadMagazine.ar"
+  },
+  {
+    "id": "ch-_en-vivo_rural",
+    "name": "Rural",
+    "logo": "https://bestleague.world/img/rural.webp",
+    "url": "https://cdn.cvattv.com.ar/live/c6eds/Canal_Rural/SA_Live_dash_enc_C/Canal_Rural.mpd",
+    "category": "Locales",
+    "streamType": "dash",
+    "drm": {
+      "keyId": "b02c568163c14cfda4ddb958a0aab742",
+      "key": "ef64a70ac85a663a3308be6476610aad"
+    },
+    "country": "AR",
+    "tvgId": "CanalRural.ar"
+  },
+  {
+    "id": "ch-_eventos_sin-chat__r_L2h0bWwvZmwvP2dldD1VWFZwWlhKdlgwaEU_",
+    "name": "Quiero Música",
+    "logo": "https://bestleague.world/img/quiero.webp",
+    "url": "https://cdn.cvattv.com.ar/live/c6eds/Quiero_HD/SA_Live_dash_enc_C/Quiero_HD.mpd",
+    "category": "Música",
+    "streamType": "dash",
+    "drm": {
+      "keyId": "a354b0c82a3a720c4a6f52ed5a1190f4",
+      "key": "45a76dcc84f058cfabc8b958d7303b28"
+    },
+    "country": "AR",
+    "tvgId": "Quiero.ar"
+  },
+  {
+    "id": "ch-_eventos_sin-chat__r_L2h0bWwvZmwvP2dldD1RMDA9",
+    "name": "CM",
+    "logo": "https://bestleague.world/img/cm.webp",
+    "url": "https://cdn.cvattv.com.ar/live/c6eds/CM/SA_Live_dash_enc_C/CM.mpd",
+    "category": "Música",
+    "streamType": "dash",
+    "drm": {
+      "keyId": "682f36b5736f4560951ca14b80d29524",
+      "key": "3accb729067a39b3b8143f1b447b9d25"
+    },
+    "country": "AR",
+    "tvgId": "CanalDeLaMusica.ar"
+  },
+  {
+    "id": "ch-_eventos_sin-chat__r_L2h0bWwvZmwvP2dldD1WVk5CWDA1bGRIZHZjbXM9",
+    "name": "USA Network",
+    "logo": "https://bestleague.world/img/uss.png",
+    "url": "https://cdn.cvattv.com.ar/live/c7eds/USA_Network/SA_Live_dash_enc_C/USA_Network.mpd",
+    "category": "Series y Entretenimiento",
+    "streamType": "dash",
+    "drm": {
+      "keyId": "c754b522b3b87dc2ba2da3e35154ec14",
+      "key": "141a51e9e83861ae99b4b217431710b3"
+    },
+    "country": "Internacional",
+    "tvgId": "UniversalTV.ar"
+  },
+  {
+    "id": "ch-_en-vivo_bravotv",
+    "name": "Bravo TV",
+    "logo": "https://bestleague.world/img/bravotv.png",
+    "url": "https://cdn.cvattv.com.ar/live/c7eds/BravoTV/SA_Live_dash_enc_C/BravoTV.mpd",
+    "category": "Series y Entretenimiento",
+    "streamType": "dash",
+    "drm": {
+      "keyId": "ad7fbbec39cea4a5a63ac13d94da48d4",
+      "key": "f71087b4dc211db079237c0fb783eb93"
+    },
+    "country": "Internacional",
+    "tvgId": ""
+  },
+  {
+    "id": "ch-_en-vivo_nba-tv",
+    "name": "NBA TV",
+    "logo": "https://bestleague.world/img/nba.png",
+    "url": "https://cdn.cvattv.com.ar/live/c6eds/NBA_TV/SA_Live_dash_enc_C/NBA_TV.mpd",
+    "category": "Deportes",
+    "streamType": "dash",
+    "drm": {
+      "keyId": "d0c38de3c9844e4e9f975dffb3eff8ad",
+      "key": "141ca0fdf6ebadfa7107576b8e09e117"
+    },
+    "country": "Internacional",
+    "tvgId": "NBATV.ar"
+  },
+  {
+    "id": "ch-_en-vivo_sun",
+    "name": "Sun Channel",
+    "logo": "https://bestleague.world/img/sun.png",
+    "url": "https://cdn.cvattv.com.ar/live/c6eds/Sun_Channel/SA_Live_dash_enc_C/Sun_Channel.mpd",
+    "category": "Series y Entretenimiento",
+    "streamType": "dash",
+    "drm": {
+      "keyId": "158177692aa3463eae5f4e1f72403e9c",
+      "key": "1c6c026fba9cf7ecb576c7bedce0ead4"
+    },
+    "country": "VE",
+    "tvgId": "SUNCHANNEL.uy"
+  },
+  {
+    "id": "ch-_en-vivo_a3cine",
+    "name": "A3CINE & A3SERIES",
+    "logo": "https://bestleague.world/img/a3cine.png",
+    "url": "https://cdn.cvattv.com.ar/live/c7eds/A3_Cine/SA_Live_dash_enc_C/A3_Cine.mpd",
+    "category": "Películas",
+    "streamType": "dash",
+    "drm": {
+      "keyId": "d6ff881a6f07986a80d6ad6f041b57d4",
+      "key": "b401c87c2ab11a1a488ee1c474b109ae"
+    },
+    "country": "ES",
+    "tvgId": "A3CINE.uy"
+  },
+  {
+    "id": "ch-_en-vivo_tnt-sports",
+    "name": "TNT Sports Premium",
+    "logo": "https://bestleague.world/img/tntar.svg",
+    "url": "https://cdn.cvattv.com.ar/live/c6eds/TNT_Sports_HD/SA_Live_dash_enc_C/TNT_Sports_HD.mpd",
+    "category": "Deportes",
+    "streamType": "dash",
+    "drm": {
+      "keyId": "bc80fa3da696e503f940fde5f681a1c5",
+      "key": "ea46e4e9f1132e8dd71fb77f7d55058a"
+    },
+    "country": "Internacional",
+    "tvgId": "TNTSports.py"
+  },
+  {
+    "id": "ch-_en-vivo_espn",
+    "name": "ESPN 1",
+    "logo": "https://bestleague.world/img/espn.webp",
+    "url": "https://cdn.cvattv.com.ar/live/c3eds/ESPN2HD/SA_Live_dash_enc_C/ESPN2HD.mpd",
+    "category": "Deportes",
+    "streamType": "dash",
+    "drm": {
+      "keyId": "e884b711ab111beb8a7ba1e7bcbdc9bf",
+      "key": "cb89ee3961599e3e648a5aad60895f34"
+    },
+    "country": "AR",
+    "tvgId": "ESPN.ar"
+  },
+  {
+    "id": "ch-_en-vivo_espn-2",
+    "name": "ESPN 2",
+    "logo": "https://bestleague.world/img/espn2.webp",
+    "url": "https://cdn.cvattv.com.ar/live/c6eds/ESPN2_Arg/SA_Live_dash_enc_C/ESPN2_Arg.mpd",
+    "category": "Deportes",
+    "streamType": "dash",
+    "drm": {
+      "keyId": "65a5bfa3c7a72dde60be9b0c7406c8fc",
+      "key": "0b40ae9f78a7bac3b57ecbf72d3c081e"
+    },
+    "country": "AR",
+    "tvgId": "ESPN2.ar"
+  },
+  {
+    "id": "ch-_en-vivo_espn-3",
+    "name": "ESPN 3",
+    "logo": "https://bestleague.world/img/espn3.webp",
+    "url": "https://cdn.cvattv.com.ar/live/c3eds/ESPN3/SA_Live_dash_enc_C/ESPN3.mpd",
+    "category": "Deportes",
+    "streamType": "dash",
+    "drm": {
+      "keyId": "f4c9f97e2a36feab0e5077f2b44cbc4e",
+      "key": "1743cd03dfe3736b2c95da91a783af38"
+    },
+    "country": "AR",
+    "tvgId": "ESPN3.ar"
+  },
+  {
+    "id": "ch-_en-vivo_espn-4",
+    "name": "ESPN 4",
+    "logo": "https://bestleague.world/img/espn4.webp",
+    "url": "https://cdn.cvattv.com.ar/live/c3eds/ESPNHD/SA_Live_dash_enc_C/ESPNHD.mpd",
+    "category": "Deportes",
+    "streamType": "dash",
+    "drm": {
+      "keyId": "cc8d44406ed6bf1898ad9f7a2d64f29e",
+      "key": "fb85d059687ab0fc67805806204edbdf"
+    },
+    "country": "AR",
+    "tvgId": "ESPN4.ar"
+  },
+  {
+    "id": "ch-_en-vivo_espn-5",
+    "name": "ESPN 5",
+    "logo": "https://bestleague.world/img/espn5.webp",
+    "url": "https://cdn.cvattv.com.ar/live/c7eds/ESPN4/SA_Live_dash_enc_C/ESPN4.mpd",
+    "category": "Deportes",
+    "streamType": "dash",
+    "drm": {
+      "keyId": "24f2b3e741f0d9e9a8d516faff38bddc",
+      "key": "bbd3fd02fb104e1463ac528a13f67e4a"
+    },
+    "country": "UY",
+    "tvgId": "ESPNSur.ar"
+  },
+  {
+    "id": "ch-_en-vivo_espn-6",
+    "name": "ESPN 6",
+    "logo": "https://bestleague.world/img/espn6.webp",
+    "url": "https://cdn.cvattv.com.ar/live/c7eds/FoxSports3_UY/SA_Live_dash_enc_C/FoxSports3_UY.mpd",
+    "category": "Deportes",
+    "streamType": "dash",
+    "drm": {
+      "keyId": "5fc7b662e69c0fbf8d39691166b1c919",
+      "key": "89157cdd25df25d56f1ecccee3850888"
+    },
+    "country": "AR",
+    "tvgId": "ESPNSur2.ar"
+  },
+  {
+    "id": "ch-_en-vivo_espn-7",
+    "name": "ESPN 7",
+    "logo": "https://bestleague.world/img/espn7.png",
+    "url": "https://cdn.cvattv.com.ar/live/c7eds/FoxSports2_UY/SA_Live_dash_enc_C/FoxSports2_UY.mpd",
+    "category": "Deportes",
+    "streamType": "dash",
+    "drm": {
+      "keyId": "5fc7b662e69c0fbf8d39691166b1c919",
+      "key": "89157cdd25df25d56f1ecccee3850888"
+    },
+    "country": "AR",
+    "tvgId": "ESPNSur3.ar"
+  },
+  {
+    "id": "ch-_en-vivo_espn-premium",
+    "name": "ESPN Premium",
+    "logo": "https://bestleague.world/img/espnpr.webp",
+    "url": "https://cdn.cvattv.com.ar/live/c7eds/Fox_Sports_Premiun_HD/SA_Live_dash_enc_C/Fox_Sports_Premiun_HD.mpd",
+    "category": "Deportes",
+    "streamType": "dash",
+    "drm": {
+      "keyId": "4c230dbc7f6a4bfa6ad0aa73ff792374",
+      "key": "4186a7c2a15f590a9399886feaec4257"
+    },
+    "country": "AR",
+    "tvgId": "ESPNExtra.ar"
+  },
+  {
+    "id": "ch-_en-vivo_fox-sports",
+    "name": "FOX Sports 1",
+    "logo": "https://bestleague.world/img/foxnew.png",
+    "url": "https://cdn.cvattv.com.ar/live/c3eds/FoxSports/SA_Live_dash_enc_C/FoxSports.mpd",
+    "category": "Deportes",
+    "streamType": "dash",
+    "drm": {
+      "keyId": "cbc2a0c7a38df0aa3333cd71841d3b0d",
+      "key": "aac61b730e2ac1df23f1e872e7541c1b"
+    },
+    "country": "AR",
+    "tvgId": "FOX Sports"
+  },
+  {
+    "id": "ch-_en-vivo_fox-sports-2",
+    "name": "FOX Sports 2",
+    "logo": "https://bestleague.world/img/foxnew2.png",
+    "url": "https://cdn.cvattv.com.ar/live/c3eds/FoxSports2HD/SA_Live_dash_enc_C/FoxSports2HD.mpd",
+    "category": "Deportes",
+    "streamType": "dash",
+    "drm": {
+      "keyId": "c98ddffc470fe449ae1a8d6492116976",
+      "key": "5086d370e840010232cf4532b16e197f"
+    },
+    "country": "AR",
+    "tvgId": "FOXSports2.ar"
+  },
+  {
+    "id": "ch-_en-vivo_fox-sports-3",
+    "name": "FOX Sports 3",
+    "logo": "https://bestleague.world/img/foxnew3.png",
+    "url": "https://cdn.cvattv.com.ar/live/c3eds/FoxSports3HD/SA_Live_dash_enc_C/FoxSports3HD.mpd",
+    "category": "Deportes",
+    "streamType": "dash",
+    "drm": {
+      "keyId": "55b47390cf9e4997dae6dac85e057875",
+      "key": "fa39e855543c5d70f30600d59e5e4c1b"
+    },
+    "country": "AR",
+    "tvgId": "FOXSports3.ar"
+  },
+  {
+    "id": "ch-_eventos_sin-chat__r_L2h0bWwvZmwvP2dldD1TRzlzWVY5VVZnPT0_",
+    "name": "¡Hola! TV",
+    "logo": "https://bestleague.world/img/holatv.jpg",
+    "url": "https://cdn.cvattv.com.ar/live/c7eds/Hola_TV/SA_Live_dash_enc_C/Hola_TV.mpd",
+    "category": "Series y Entretenimiento",
+    "streamType": "dash",
+    "drm": {
+      "keyId": "5d759477f0ad1bdef2c6de09e7c275fd",
+      "key": "82cc6eea185eecc934df95adfbbf9dbc"
+    },
+    "country": "AR",
+    "tvgId": "HOLATV.uy"
+  },
+  {
+    "id": "ch-_en-vivo_adult-swim",
+    "name": "Adult Swim",
+    "logo": "https://bestleague.world/img/adults.png",
+    "url": "https://cdn.cvattv.com.ar/live/c3eds/Adult_Swim/SA_Live_dash_enc_C/Adult_Swim.mpd",
+    "category": "Series y Entretenimiento",
+    "streamType": "dash",
+    "drm": {
+      "keyId": "9be1432e1e594c8d0648a44d3d9f0c46",
+      "key": "8e6c785b14d973c504074b1920f11b15"
+    },
+    "country": "AR",
+    "tvgId": "ADULTSWIM.uy"
+  },
+  {
+    "id": "ch-_en-vivo_ae",
+    "name": "AE",
+    "logo": "https://bestleague.world/img/ae.webp",
+    "url": "https://cdn.cvattv.com.ar/live/c7eds/AEHD/SA_Live_dash_enc_C/AEHD.mpd",
+    "category": "Series y Entretenimiento",
+    "streamType": "dash",
+    "drm": {
+      "keyId": "db12035627a4b3d7198b761f36b4a290",
+      "key": "80ca761a875992ac0e50b0851d5563fe"
+    },
+    "country": "AR",
+    "tvgId": "AandE.uy"
+  },
+  {
+    "id": "ch-_en-vivo_amc",
+    "name": "AMC",
+    "logo": "https://bestleague.world/img/amc.webp",
+    "url": "https://cdn.cvattv.com.ar/live/c3eds/AMC/SA_Live_dash_enc_C/AMC.mpd",
+    "category": "Series y Entretenimiento",
+    "streamType": "dash",
+    "drm": {
+      "keyId": "1fa6a86fd80b6d1425dde74482b5dc9c",
+      "key": "744c3636d57a651ab444cf9fe5f95b33"
+    },
+    "country": "AR",
+    "tvgId": "AMC.ar"
+  },
+  {
+    "id": "ch-_eventos_sin-chat__r_L2h0bWwvZmwvP2dldD1RVTFEWDFObGNtbGxjdz09",
+    "name": "AMC Series",
+    "logo": "https://bestleague.world/img/amc-sr.png",
+    "url": "https://cdn.cvattv.com.ar/live/c6eds/AMC_Series/SA_Live_dash_enc_C/AMC_Series.mpd",
+    "category": "Series y Entretenimiento",
+    "streamType": "dash",
+    "drm": {
+      "keyId": "10d3d4f33a6bad277accc2688c46b406",
+      "key": "588fd56bcab1fcdb4f33b5c2f7018d29"
+    },
+    "country": "AR",
+    "tvgId": "AMC.ar"
+  },
+  {
+    "id": "ch-_en-vivo_cinecanal",
+    "name": "Cinecanal",
+    "logo": "https://bestleague.world/img/cinecanal.webp",
+    "url": "https://cdn.cvattv.com.ar/live/c3eds/CinecanalHD/SA_Live_dash_enc_C/CinecanalHD.mpd",
+    "category": "Películas",
+    "streamType": "dash",
+    "drm": {
+      "keyId": "6003e92dd0d9f548329015c9e15dd578",
+      "key": "213cf85cb5f9fe569757004a77e05948"
+    },
+    "country": "AR",
+    "tvgId": "Cinecanal.ar"
+  },
+  {
+    "id": "ch-_en-vivo_comedy-central",
+    "name": "Comedy Central",
+    "logo": "https://bestleague.world/img/comedy.webp",
+    "url": "https://cdn.cvattv.com.ar/live/c7eds/ComedyCentral/SA_Live_dash_enc_C/ComedyCentral.mpd",
+    "category": "Series y Entretenimiento",
+    "streamType": "dash",
+    "drm": {
+      "keyId": "4013f784c5ef4318ad47024e61eb094e",
+      "key": "bad433a547f97c7f65cda5e83b8dd416"
+    },
+    "country": "AR",
+    "tvgId": "ComedyCentral.ar"
+  },
+  {
+    "id": "ch-_en-vivo_discovery",
+    "name": "Discovery Channel",
+    "logo": "https://bestleague.world/img/discovery.webp",
+    "url": "https://cdn.cvattv.com.ar/live/c3eds/DiscoveryHD/SA_Live_dash_enc_C/DiscoveryHD.mpd",
+    "category": "Documentales",
+    "streamType": "dash",
+    "drm": {
+      "keyId": "c283c84a7af0d7c8b9b612a8fb22a001",
+      "key": "f45510c721eebd6eaa86a2e16ccbd77d"
+    },
+    "country": "AR",
+    "tvgId": "DiscoveryChannel.ar"
+  },
+  {
+    "id": "ch-_en-vivo_discovery-hyh",
+    "name": "Discovery HyH",
+    "logo": "https://bestleague.world/img/hyh.webp",
+    "url": "https://cdn.cvattv.com.ar/live/c4eds/DiscoveryHomeHealthHD/SA_Live_dash_enc_C/DiscoveryHomeHealthHD.mpd",
+    "category": "Documentales",
+    "streamType": "dash",
+    "drm": {
+      "keyId": "9b0a76dd7a0df1e1b4320aeb1254d1a9",
+      "key": "d011267775c38d6d2ab09b428c03d63f"
+    },
+    "country": "AR",
+    "tvgId": "HOMEandHEALTH.uy"
+  },
+  {
+    "id": "ch-_en-vivo_e",
+    "name": "E! Entertainment",
+    "logo": "https://bestleague.world/img/e.webp",
+    "url": "https://cdn.cvattv.com.ar/live/c6eds/E_Entertainment_Television/SA_Live_dash_enc_C/E_Entertainment_Television.mpd",
+    "category": "Series y Entretenimiento",
+    "streamType": "dash",
+    "drm": {
+      "keyId": "5883553207f13e3dc8cecd1113d5ba68",
+      "key": "45434d40636dfa0e5312b93218e02185"
+    },
+    "country": "AR",
+    "tvgId": "ENTERTAINMENTTELEVISION.uy"
+  },
+  {
+    "id": "ch-_en-vivo_food-network",
+    "name": "Food Network",
+    "logo": "https://bestleague.world/img/food.webp",
+    "url": "https://cdn.cvattv.com.ar/live/c6eds/Food_Network/SA_Live_dash_enc_C/Food_Network.mpd",
+    "category": "Series y Entretenimiento",
+    "streamType": "dash",
+    "drm": {
+      "keyId": "6ca0fbad21a0e908c0280dcc27e6ee0e",
+      "key": "62670eedbafdf9360b4ecaed738e26cd"
+    },
+    "country": "AR",
+    "tvgId": "FOODNETWORK.uy"
+  },
+  {
+    "id": "ch-_en-vivo_gourmet",
+    "name": "Gourmet",
+    "logo": "https://bestleague.world/img/Group.svg",
+    "url": "https://cdn.cvattv.com.ar/live/c3eds/Gourmet/SA_Live_dash_enc_C/Gourmet.mpd",
+    "category": "Series y Entretenimiento",
+    "streamType": "dash",
+    "drm": {
+      "keyId": "93d853ac4c8e24cf0295f6f97ee53bd3",
+      "key": "fa5817fab4fb054ccea1abb9f3d767ed"
+    },
+    "country": "AR",
+    "tvgId": "ElGourmet.ar"
+  },
+  {
+    "id": "ch-_en-vivo_lifetime",
+    "name": "Lifetime",
+    "logo": "https://bestleague.world/img/lifetime.webp",
+    "url": "https://cdn.cvattv.com.ar/live/c6eds/Lifetime/SA_Live_dash_enc_C/Lifetime.mpd",
+    "category": "Series y Entretenimiento",
+    "streamType": "dash",
+    "drm": {
+      "keyId": "eae51b1d67ff47adac7b6bd3a4b1120a",
+      "key": "b4d6bb47193f33ffc12379cdc447455d"
+    },
+    "country": "AR",
+    "tvgId": "Lifetime.ar"
+  },
+  {
+    "id": "ch-_en-vivo_tnt",
+    "name": "TNT",
+    "logo": "https://bestleague.world/img/tnt.webp",
+    "url": "https://cdn.cvattv.com.ar/live/c3eds/TNT_HD_Arg/SA_Live_dash_enc_C/TNT_HD_Arg.mpd",
+    "category": "Películas",
+    "streamType": "dash",
+    "drm": {
+      "keyId": "faad1722a575f4d9ec7b774db63c879c",
+      "key": "cf0184830344ba36ad2ffef9dd2dd9d0"
+    },
+    "country": "AR",
+    "tvgId": "TNT.ar"
+  },
+  {
+    "id": "ch-_en-vivo_axn",
+    "name": "AXN",
+    "logo": "https://bestleague.world/img/axn.webp",
+    "url": "https://cdn.cvattv.com.ar/live/c7eds/AXNHD/SA_Live_dash_enc_C/AXNHD.mpd",
+    "category": "Series y Entretenimiento",
+    "streamType": "dash",
+    "drm": {
+      "keyId": "03e77b5bbf5135a85d587c5af2f2f730",
+      "key": "1dd1ab1938a791d03f09eb88478b4880"
+    },
+    "country": "AR",
+    "tvgId": "AXN.ar"
+  },
+  {
+    "id": "ch-_en-vivo_cinemax",
+    "name": "Cinemax",
+    "logo": "https://bestleague.world/img/cinemax.webp",
+    "url": "https://cdn.cvattv.com.ar/live/c6eds/Cinemax/SA_Live_dash_enc_C/Cinemax.mpd",
+    "category": "Películas",
+    "streamType": "dash",
+    "drm": {
+      "keyId": "977928a92b82ba3781741a6470f8f45b",
+      "key": "51f4e62827c128f7210b79a11587661a"
+    },
+    "country": "AR",
+    "tvgId": "Cinemax.ar"
+  },
+  {
+    "id": "ch-_en-vivo_film-and-arts",
+    "name": "Film & Arts",
+    "logo": "https://bestleague.world/img/film.png",
+    "url": "https://cdn.cvattv.com.ar/live/c6eds/Film_Arts/SA_Live_dash_enc_C/Film_Arts.mpd",
+    "category": "Películas",
+    "streamType": "dash",
+    "drm": {
+      "keyId": "91c540d350f34f5386f3f1c77f74001f",
+      "key": "54ee72810551da0cba0c45a8df651962"
+    },
+    "country": "AR",
+    "tvgId": "filmAndarts.ar"
+  },
+  {
+    "id": "ch-_en-vivo_fx",
+    "name": "FX",
+    "logo": "https://bestleague.world/img/fx.webp",
+    "url": "https://cdn.cvattv.com.ar/live/c3eds/FXHD/SA_Live_dash_enc_C/FXHD.mpd",
+    "category": "Películas",
+    "streamType": "dash",
+    "drm": {
+      "keyId": "9ab9c42c713e0fb5517dc77cc19d6755",
+      "key": "d8c271b82387e609b6c19e5e79240aff"
+    },
+    "country": "AR",
+    "tvgId": "FX.ar"
+  },
+  {
+    "id": "ch-_en-vivo_golden",
+    "name": "Golden",
+    "logo": "https://bestleague.world/img/Logo_Golden_TV.svg",
+    "url": "https://cdn.cvattv.com.ar/live/c6eds/Golden/SA_Live_dash_enc_C/Golden.mpd",
+    "category": "Películas",
+    "streamType": "dash",
+    "drm": {
+      "keyId": "b7d085dbd4539afcc6a55445efb2b04e",
+      "key": "0a55fbe044fed379d1632b589265b571"
+    },
+    "country": "AR",
+    "tvgId": "Golden.ar"
+  },
+  {
+    "id": "ch-_en-vivo_hbo",
+    "name": "HBO",
+    "logo": "https://bestleague.world/img/hbo.webp",
+    "url": "https://cdn.cvattv.com.ar/live/c4eds/HBOHD/SA_Live_dash_enc_C/HBOHD.mpd",
+    "category": "Películas",
+    "streamType": "dash",
+    "drm": {
+      "keyId": "5317283f4110fac3fb3a0becd9f648bc",
+      "key": "0754a03c926b1247216e01d9dbcfac28"
+    },
+    "country": "AR",
+    "tvgId": "HBO.ar"
+  },
+  {
+    "id": "ch-_en-vivo_hbo-2",
+    "name": "HBO 2",
+    "logo": "https://bestleague.world/img/hbo2.webp",
+    "url": "https://cdn.cvattv.com.ar/live/c6eds/HBO_2/SA_Live_dash_enc_C/HBO_2.mpd",
+    "category": "Películas",
+    "streamType": "dash",
+    "drm": {
+      "keyId": "c90cc57ad2c436e5a77db2f8d9db2d85",
+      "key": "04f6c73984bdcffd013050608497935d"
+    },
+    "country": "AR",
+    "tvgId": "HBO2.ar"
+  },
+  {
+    "id": "ch-_en-vivo_hbo-family",
+    "name": "HBO Family",
+    "logo": "https://bestleague.world/img/hbofam.webp",
+    "url": "https://cdn.cvattv.com.ar/live/c6eds/HBO_Family/SA_Live_dash_enc_C/HBO_Family.mpd",
+    "category": "Películas",
+    "streamType": "dash",
+    "drm": {
+      "keyId": "535473132f68082160b489482ca35f8e",
+      "key": "e90fd91fcd3fc809bed2b1c0d37f7297"
+    },
+    "country": "AR",
+    "tvgId": "HBOFamily.ar"
+  },
+  {
+    "id": "ch-_en-vivo_hbo-mundi",
+    "name": "HBO Mundi",
+    "logo": "https://bestleague.world/img/hbomundi.webp",
+    "url": "https://cdn.cvattv.com.ar/live/c6eds/HBO_Mundi/SA_Live_dash_enc_C/HBO_Mundi.mpd",
+    "category": "Películas",
+    "streamType": "dash",
+    "drm": {
+      "keyId": "7821b2662148fe333d5191acbb8a5c1f",
+      "key": "ae43f3e2545237ebda58b13813b5d328"
+    },
+    "country": "AR",
+    "tvgId": "HBOMundi.ar"
+  },
+  {
+    "id": "ch-_en-vivo_hbo-plus",
+    "name": "HBO Plus",
+    "logo": "https://bestleague.world/img/hboplus.webp",
+    "url": "https://cdn.cvattv.com.ar/live/c6eds/HBO_Plus/SA_Live_dash_enc_C/HBO_Plus.mpd",
+    "category": "Películas",
+    "streamType": "dash",
+    "drm": {
+      "keyId": "f0e7f7d458990edfab7b98b412564615",
+      "key": "79205754b7f84a62661c2dbe9de5dd5d"
+    },
+    "country": "AR",
+    "tvgId": "HBOPlus(Panamericano).ar"
+  },
+  {
+    "id": "ch-_en-vivo_hbo-pop",
+    "name": "HBO Pop",
+    "logo": "https://bestleague.world/img/hbopop.webp",
+    "url": "https://cdn.cvattv.com.ar/live/c7eds/HBO_POP/SA_Live_dash_enc_C/HBO_POP.mpd",
+    "category": "Películas",
+    "streamType": "dash",
+    "drm": {
+      "keyId": "f4e1ce5cef7e9a110fe968f8881b21fa",
+      "key": "6bbe2062b150b11496cdd5fbdd9c89d6"
+    },
+    "country": "AR",
+    "tvgId": "HBOPop.ar"
+  },
+  {
+    "id": "ch-_en-vivo_hbo-sig",
+    "name": "HBO Signature",
+    "logo": "https://bestleague.world/img/hbosig.webp",
+    "url": "https://cdn.cvattv.com.ar/live/c6eds/HBO_Signature/SA_Live_dash_enc_C/HBO_Signature.mpd",
+    "category": "Películas",
+    "streamType": "dash",
+    "drm": {
+      "keyId": "e866499fbc1149f49989672075aa3a68",
+      "key": "d2dd5c95623c6343240981c2202fc311"
+    },
+    "country": "AR",
+    "tvgId": "HBOSignature.ar"
+  },
+  {
+    "id": "ch-_en-vivo_hbo-xtreme",
+    "name": "HBO Xtreme",
+    "logo": "https://bestleague.world/img/hboxtreme.webp",
+    "url": "https://cdn.cvattv.com.ar/live/c6eds/HBO_Extreme/SA_Live_dash_enc_C/HBO_Extreme.mpd",
+    "category": "Películas",
+    "streamType": "dash",
+    "drm": {
+      "keyId": "d504011bbef467c0de3a7534e302a6d4",
+      "key": "334103e2abe16faa7f9ab2e3097c5a58"
+    },
+    "country": "AR",
+    "tvgId": "HBOXtreme.ar"
+  },
+  {
+    "id": "ch-_en-vivo_paramount-network",
+    "name": "Paramount Network",
+    "logo": "https://bestleague.world/img/paramount.webp",
+    "url": "https://cdn.cvattv.com.ar/live/c7eds/Paramount/SA_Live_dash_enc_C/Paramount.mpd",
+    "category": "Películas",
+    "streamType": "dash",
+    "drm": {
+      "keyId": "b85b710ecff3e38f31fc8e249b1c1cef",
+      "key": "a1544c193dde6f8858c9358ee69a60a7"
+    },
+    "country": "AR",
+    "tvgId": "MULTIPREMIER.uy"
+  },
+  {
+    "id": "ch-_en-vivo_sony-channel",
+    "name": "Sony Channel",
+    "logo": "https://bestleague.world/img/sony.webp",
+    "url": "https://cdn.cvattv.com.ar/live/c7eds/SonyHD/SA_Live_dash_enc_C/SonyHD.mpd",
+    "category": "Películas",
+    "streamType": "dash",
+    "drm": {
+      "keyId": "fd9619f9d7c2d5115a339941279e0b4b",
+      "key": "bf55635e6591f905659fa27ab3ca2812"
+    },
+    "country": "AR",
+    "tvgId": "Sony.ar"
+  },
+  {
+    "id": "ch-_en-vivo_space",
+    "name": "Space",
+    "logo": "https://bestleague.world/img/space.webp",
+    "url": "https://cdn.cvattv.com.ar/live/c3eds/Space/SA_Live_dash_enc_C/Space.mpd",
+    "category": "Películas",
+    "streamType": "dash",
+    "drm": {
+      "keyId": "0942e4ecd1bd3567e8f9447f45c20a12",
+      "key": "efca6264f04cf7373de0c30ec79fe909"
+    },
+    "country": "AR",
+    "tvgId": "Space.ar"
+  },
+  {
+    "id": "ch-_en-vivo_star-channel",
+    "name": "Star Channel",
+    "logo": "https://bestleague.world/img/star.webp",
+    "url": "https://cdn.cvattv.com.ar/live/c3eds/FOXHD/SA_Live_dash_enc_C/FOXHD.mpd",
+    "category": "Películas",
+    "streamType": "dash",
+    "drm": {
+      "keyId": "8023e85ef9d17561ee1b424179b1b15e",
+      "key": "477ad189f1fcd2baec026068107f862f"
+    },
+    "country": "AR",
+    "tvgId": "StarChannel.ar"
+  },
+  {
+    "id": "ch-_en-vivo_studio-universal",
+    "name": "Studio Universal",
+    "logo": "https://bestleague.world/img/studio.webp",
+    "url": "https://cdn.cvattv.com.ar/live/c6eds/Studio_Universal/SA_Live_dash_enc_C/Studio_Universal.mpd",
+    "category": "Películas",
+    "streamType": "dash",
+    "drm": {
+      "keyId": "d9b541e3cd064d569843da42788d4263",
+      "key": "bba5d26ad5051fb3f2cf7e3dd8a4a7d8"
+    },
+    "country": "AR",
+    "tvgId": "StudioUniversal.ar"
+  },
+  {
+    "id": "ch-_en-vivo_tcm",
+    "name": "TCM",
+    "logo": "https://bestleague.world/img/tcm.webp",
+    "url": "https://cdn.cvattv.com.ar/live/c6eds/TCM/SA_Live_dash_enc_C/TCM.mpd",
+    "category": "Películas",
+    "streamType": "dash",
+    "drm": {
+      "keyId": "a5f44a5e30714cf3bcee7c7f15a08b4e",
+      "key": "c3c141ae941ab9750339c3af45a65ce2"
+    },
+    "country": "AR",
+    "tvgId": "TCM.ar"
+  },
+  {
+    "id": "ch-_en-vivo_tnt-novelas",
+    "name": "TNT Novelas",
+    "logo": "https://bestleague.world/img/tntnovelas.png",
+    "url": "https://cdn.cvattv.com.ar/live/c6eds/TBS/SA_Live_dash_enc_C/TBS.mpd",
+    "category": "Series y Entretenimiento",
+    "streamType": "dash",
+    "drm": {
+      "keyId": "49a0179b034ae899cb67d8a5834181aa",
+      "key": "486e2c6d69adea7e17f2960e8e366612"
+    },
+    "country": "AR",
+    "tvgId": "TNTNOVELAS.uy"
+  },
+  {
+    "id": "ch-_en-vivo_tnt-series",
+    "name": "TNT Series",
+    "logo": "https://bestleague.world/img/tntseries.webp",
+    "url": "https://cdn.cvattv.com.ar/live/c3eds/TNTSeries/SA_Live_dash_enc_C/TNTSeries.mpd",
+    "category": "Series y Entretenimiento",
+    "streamType": "dash",
+    "drm": {
+      "keyId": "5c14d6aeb19bf113edf91a7b544253cb",
+      "key": "8d776d6f9c5c840ebe88d767dd731692"
+    },
+    "country": "AR",
+    "tvgId": "TNTSeries.ar"
+  },
+  {
+    "id": "ch-_en-vivo_universal-cinema",
+    "name": "Universal Cinema",
+    "logo": "https://bestleague.world/img/universalcinema.webp",
+    "url": "https://cdn.cvattv.com.ar/live/c6eds/Universal_Cinema/SA_Live_dash_enc_C/Universal_Cinema.mpd",
+    "category": "Películas",
+    "streamType": "dash",
+    "drm": {
+      "keyId": "f6ae2e17173055e4ca69dc18963406ae",
+      "key": "5a955c29eb88a0b4c9a2538cc4b3aea2"
+    },
+    "country": "AR",
+    "tvgId": "UNIVERSALCINEMA.uy"
+  },
+  {
+    "id": "ch-_en-vivo_universal-comedy",
+    "name": "Universal Comedy",
+    "logo": "https://bestleague.world/img/universalcomedy.webp",
+    "url": "https://cdn.cvattv.com.ar/live/c6eds/Universal_Comedy/SA_Live_dash_enc_C/Universal_Comedy.mpd",
+    "category": "Películas",
+    "streamType": "dash",
+    "drm": {
+      "keyId": "062c5d25105a3a935b67e36923c73f28",
+      "key": "88c2d4cec420f18d2477152c66c7870d"
+    },
+    "country": "AR",
+    "tvgId": "UNIVERSALCOMEDY.uy"
+  },
+  {
+    "id": "ch-_en-vivo_universal-crime",
+    "name": "Universal Crime",
+    "logo": "https://bestleague.world/img/universalcrime.webp",
+    "url": "https://cdn.cvattv.com.ar/live/c6eds/universal_Crime/SA_Live_dash_enc_C/universal_Crime.mpd",
+    "category": "Películas",
+    "streamType": "dash",
+    "drm": {
+      "keyId": "1efd7edf60e1514f775dd13d046ae708",
+      "key": "c2ef1abbd945c62c11b1375eaaa50f0d"
+    },
+    "country": "AR",
+    "tvgId": "UNIVERSALCRIME.uy"
+  },
+  {
+    "id": "ch-_en-vivo_universal-premiere",
+    "name": "Universal Premiere",
+    "logo": "https://bestleague.world/img/universalpremiere.webp",
+    "url": "https://cdn.cvattv.com.ar/live/c6eds/Universal_Premiere/SA_Live_dash_enc_C/Universal_Premiere.mpd",
+    "category": "Películas",
+    "streamType": "dash",
+    "drm": {
+      "keyId": "0eb20b51ad13b58ad417f11318e588b3",
+      "key": "ad5d29a33d73d21187157802de8e6097"
+    },
+    "country": "AR",
+    "tvgId": "UNIVERSALPREMIERE.uy"
+  },
+  {
+    "id": "ch-_en-vivo_universal-reality",
+    "name": "Universal Reality",
+    "logo": "https://bestleague.world/img/universalreality.webp",
+    "url": "https://cdn.cvattv.com.ar/live/c6eds/Universal_Reality/SA_Live_dash_enc_C/Universal_Reality.mpd",
+    "category": "Películas",
+    "streamType": "dash",
+    "drm": {
+      "keyId": "cedd9c1a5c2ae43f80ee3197212016d6",
+      "key": "bf47a3c39e164a97ea6adc4c8dd57435"
+    },
+    "country": "AR",
+    "tvgId": "UNIVERSALREALITY.uy"
+  },
+  {
+    "id": "ch-_en-vivo_warner",
+    "name": "Warner Channel",
+    "logo": "https://bestleague.world/img/warner.webp",
+    "url": "https://cdn.cvattv.com.ar/live/c7eds/WarnerHD/SA_Live_dash_enc_C/WarnerHD.mpd",
+    "category": "Películas",
+    "streamType": "dash",
+    "drm": {
+      "keyId": "069bd3f0b6c279467e08549f17bf5bd0",
+      "key": "5afa7e369a6de1093818a85af912a775"
+    },
+    "country": "AR",
+    "tvgId": "WarnerChannel.ar"
+  },
+  {
+    "id": "ch-_en-vivo_animal-planet",
+    "name": "Animal Planet",
+    "logo": "https://bestleague.world/img/aplanet.webp",
+    "url": "https://cdn.cvattv.com.ar/live/c7eds/AnimalPlanet/SA_Live_dash_enc_C/AnimalPlanet.mpd",
+    "category": "Documentales",
+    "streamType": "dash",
+    "drm": {
+      "keyId": "4146a8ecbb0540dc807c6389ee87e0bc",
+      "key": "0c3cdc1b3e4617c57361265e9fa4c5bd"
+    },
+    "country": "AR",
+    "tvgId": "AnimalPlanet.ar"
+  },
+  {
+    "id": "ch-_en-vivo_discovery-id",
+    "name": "Discovery ID",
+    "logo": "https://bestleague.world/img/id.webp",
+    "url": "https://cdn.cvattv.com.ar/live/c7eds/ID/SA_Live_dash_enc_C/ID.mpd",
+    "category": "Documentales",
+    "streamType": "dash",
+    "drm": {
+      "keyId": "0956caf2e2bd41f49fdcead7cc94fe24",
+      "key": "640c49578073a911938617eb4e652d6c"
+    },
+    "country": "AR",
+    "tvgId": "InvestigationDiscovery.ar"
+  },
+  {
+    "id": "ch-_en-vivo_discovery-science",
+    "name": "Discovery Science",
+    "logo": "https://bestleague.world/img/disscience.webp",
+    "url": "https://cdn.cvattv.com.ar/live/c6eds/Discovery_Science/SA_Live_dash_enc_C/Discovery_Science.mpd",
+    "category": "Documentales",
+    "streamType": "dash",
+    "drm": {
+      "keyId": "46ba409fb04e40fb86b466d97e3a9588",
+      "key": "f129fb9b5d213e20e2abe529b8cf2597"
+    },
+    "country": "AR",
+    "tvgId": "DISCOVERYSCIENCE.uy"
+  },
+  {
+    "id": "ch-_en-vivo_discovery-theater",
+    "name": "Discovery Theater",
+    "logo": "https://bestleague.world/img/distheater.webp",
+    "url": "https://cdn.cvattv.com.ar/live/c6eds/Theater_HD/SA_Live_dash_enc_C/Theater_HD.mpd",
+    "category": "Documentales",
+    "streamType": "dash",
+    "drm": {
+      "keyId": "5279c05ea51c4dae8e7fa6be88448089",
+      "key": "b28dfafba4b848dfd5d7c177ebf19108"
+    },
+    "country": "AR",
+    "tvgId": "DISCOVERYTHEATER.uy"
+  },
+  {
+    "id": "ch-_en-vivo_discovery-tlc",
+    "name": "Discovery TLC",
+    "logo": "https://bestleague.world/img/tlc.webp",
+    "url": "https://cdn.cvattv.com.ar/live/c6eds/TLC/SA_Live_dash_enc_C/TLC.mpd",
+    "category": "Documentales",
+    "streamType": "dash",
+    "drm": {
+      "keyId": "58761c7b2819491eb3a0d765842c341a",
+      "key": "9dabc48f88bd7f266734e57501bd6f47"
+    },
+    "country": "AR",
+    "tvgId": "TLC.ar"
+  },
+  {
+    "id": "ch-_en-vivo_discovery-turbo",
+    "name": "Discovery Turbo",
+    "logo": "https://bestleague.world/img/turbo.webp",
+    "url": "https://cdn.cvattv.com.ar/live/c7eds/DiscoveryTurbo/SA_Live_dash_enc_C/DiscoveryTurbo.mpd",
+    "category": "Documentales",
+    "streamType": "dash",
+    "drm": {
+      "keyId": "a611ddbf8c15fa617a0c391cb7b3e128",
+      "key": "0cd1300baf8890380fd41124962195c4"
+    },
+    "country": "AR",
+    "tvgId": "DiscoveryTurbo.ar"
+  },
+  {
+    "id": "ch-_en-vivo_discovery-world",
+    "name": "Discovery World",
+    "logo": "https://bestleague.world/img/disworld.webp",
+    "url": "https://cdn.cvattv.com.ar/live/c6eds/Discovery_World_HD/SA_Live_dash_enc_C/Discovery_World_HD.mpd",
+    "category": "Documentales",
+    "streamType": "dash",
+    "drm": {
+      "keyId": "34ee94c2263345f7a3a590661264e490",
+      "key": "56757d656a697ab7a2e5e083b5d21bb5"
+    },
+    "country": "AR",
+    "tvgId": "DISCOVERYWORLD.uy"
+  },
+  {
+    "id": "ch-_en-vivo_history",
+    "name": "History",
+    "logo": "https://bestleague.world/img/history.webp",
+    "url": "https://cdn.cvattv.com.ar/live/c7eds/HistoryHD/SA_Live_dash_enc_C/HistoryHD.mpd",
+    "category": "Documentales",
+    "streamType": "dash",
+    "drm": {
+      "keyId": "e82318e518ba70cea3d7b37bef99e692",
+      "key": "a05fcb634c071a514e3039e1c274b4db"
+    },
+    "country": "AR",
+    "tvgId": "History.ar"
+  },
+  {
+    "id": "ch-_en-vivo_history-2",
+    "name": "History 2",
+    "logo": "https://bestleague.world/img/history2.webp",
+    "url": "https://cdn.cvattv.com.ar/live/c6eds/History_2/SA_Live_dash_enc_C/History_2.mpd",
+    "category": "Documentales",
+    "streamType": "dash",
+    "drm": {
+      "keyId": "ecbe97ec34784304b390a12ba3854ccf",
+      "key": "5a0ee36ed9b8920cb19546fd92f2d415"
+    },
+    "country": "AR",
+    "tvgId": "History2.ar"
+  },
+  {
+    "id": "ch-_en-vivo_natgeo",
+    "name": "National Geographic",
+    "logo": "https://bestleague.world/img/natgeo.webp",
+    "url": "https://cdn.cvattv.com.ar/live/c3eds/NatGeoHD/SA_Live_dash_enc_C/NatGeoHD.mpd",
+    "category": "Documentales",
+    "streamType": "dash",
+    "drm": {
+      "keyId": "4be0c61ceddc62294cc9e23b627af53d",
+      "key": "852c1935d11c3c53d0a1ceff3bb3bf16"
+    },
+    "country": "AR",
+    "tvgId": "NationalGeographic.ar"
+  },
+  {
+    "id": "ch-_en-vivo_cartoon-network",
+    "name": "Cartoon Network",
+    "logo": "https://bestleague.world/img/cn.webp",
+    "url": "https://cdn.cvattv.com.ar/live/c3eds/CartoonNetwork/SA_Live_dash_enc_C/CartoonNetwork.mpd",
+    "category": "Infantiles",
+    "streamType": "dash",
+    "drm": {
+      "keyId": "d7df56efaa36a71141d238854cc46d1d",
+      "key": "8abb2ee9150d8b2af8ebec0de0f833c8"
+    },
+    "country": "AR",
+    "tvgId": "CartoonNetwork.ar"
+  },
+  {
+    "id": "ch-_en-vivo_cartoonito",
+    "name": "Cartoonito",
+    "logo": "https://bestleague.world/img/cart.webp",
+    "url": "https://cdn.cvattv.com.ar/live/c7eds/Boomerang/SA_Live_dash_enc_C/Boomerang.mpd",
+    "category": "Infantiles",
+    "streamType": "dash",
+    "drm": {
+      "keyId": "5792e613fceb699c79cbc0e75fe4cd37",
+      "key": "a672793730476ed23e5c1bce2ff570c6"
+    },
+    "country": "AR",
+    "tvgId": "Cartoonito.ar"
+  },
+  {
+    "id": "ch-_en-vivo_discovery-kids",
+    "name": "Discovery Kids",
+    "logo": "https://bestleague.world/img/diskids.webp",
+    "url": "https://cdn.cvattv.com.ar/live/c6eds/Discovery_Kids/SA_Live_dash_enc_C/Discovery_Kids.mpd",
+    "category": "Infantiles",
+    "streamType": "dash",
+    "drm": {
+      "keyId": "ffb2f0f63c23a3592d4653e938b9ca19",
+      "key": "d3661ae881fc55fc7a15815cd439747b"
+    },
+    "country": "AR",
+    "tvgId": "DiscoveryKids.ar"
+  },
+  {
+    "id": "ch-_en-vivo_disney-channel",
+    "name": "Disney Channel",
+    "logo": "https://bestleague.world/img/disney.webp",
+    "url": "https://cdn.cvattv.com.ar/live/c3eds/DisneyChannelHD/SA_Live_dash_enc_C/DisneyChannelHD.mpd",
+    "category": "Infantiles",
+    "streamType": "dash",
+    "drm": {
+      "keyId": "4a742e478d14023e1993e011d9415f94",
+      "key": "0df77ede9bc744376836d21afa137dda"
+    },
+    "country": "AR",
+    "tvgId": "DisneyChannel.ar"
+  },
+  {
+    "id": "ch-_en-vivo_disney-jr",
+    "name": "Disney Junior",
+    "logo": "https://bestleague.world/img/disneyjr.webp",
+    "url": "https://cdn.cvattv.com.ar/live/c7eds/DisneyJr/SA_Live_dash_enc_C/DisneyJr.mpd",
+    "category": "Infantiles",
+    "streamType": "dash",
+    "drm": {
+      "keyId": "bd29c4a538f28845ce33581111749428",
+      "key": "46d9589f41a11c3637c07c604956deac"
+    },
+    "country": "AR",
+    "tvgId": "DisneyJunior.ar"
+  },
+  {
+    "id": "ch-_en-vivo_dreamworks",
+    "name": "DreamWorks",
+    "logo": "https://bestleague.world/img/dream.png",
+    "url": "https://cdn.cvattv.com.ar/live/c7eds/Dreamworks/SA_Live_dash_enc_C/Dreamworks.mpd",
+    "category": "Infantiles",
+    "streamType": "dash",
+    "drm": {
+      "keyId": "7f30c43e47544412221fd64201d92f4b",
+      "key": "f83d09d75a0946b1d71aa48c201b4d8b"
+    },
+    "country": "AR",
+    "tvgId": "Dreamworks.ar"
+  },
+  {
+    "id": "ch-_en-vivo_nickjr",
+    "name": "Nick Jr.",
+    "logo": "https://bestleague.world/img/nickjr.webp",
+    "url": "https://cdn.cvattv.com.ar/live/c6eds/Nick_Jr/SA_Live_dash_enc_C/Nick_Jr.mpd",
+    "category": "Infantiles",
+    "streamType": "dash",
+    "drm": {
+      "keyId": "e824b2277a86fd6adfc40aa948e5064a",
+      "key": "28da2dbbe8e1a1463bbb23895b922083"
+    },
+    "country": "AR",
+    "tvgId": "NickJr..ar"
+  },
+  {
+    "id": "ch-_en-vivo_nick",
+    "name": "Nickelodeon",
+    "logo": "https://bestleague.world/img/nick.png",
+    "url": "https://cdn.cvattv.com.ar/live/c6eds/Discovery_Kids/SA_Live_dash_enc_C/Discovery_Kids.mpd",
+    "category": "Infantiles",
+    "streamType": "dash",
+    "drm": {
+      "keyId": "ffb2f0f63c23a3592d4653e938b9ca19",
+      "key": "d3661ae881fc55fc7a15815cd439747b"
+    },
+    "country": "AR",
+    "tvgId": "NICKELODEON.uy"
+  },
+  {
+    "id": "ch-_eventos_sin-chat__r_L2h0bWwvZmwvP2dldD1TRlJX",
+    "name": "HTV",
+    "logo": "https://bestleague.world/img/htv.webp",
+    "url": "https://cdn.cvattv.com.ar/live/c6eds/HTV/SA_Live_dash_enc_C/HTV.mpd",
+    "category": "Música",
+    "streamType": "dash",
+    "drm": {
+      "keyId": "daecef5fe32f4ce083c6a0c692755d6a",
+      "key": "d4227f24389a9ba77293214b93eb0d7d"
+    },
+    "country": "AR",
+    "tvgId": "HTV.ar"
+  },
+  {
+    "id": "ch-_eventos_sin-chat__r_L2h0bWwvZmwvP2dldD1UVlJXWDBoRQ__",
+    "name": "MTV",
+    "logo": "https://bestleague.world/img/mtv.webp",
+    "url": "https://cdn.cvattv.com.ar/live/c6eds/MTV_HD/SA_Live_dash_enc_C/MTV_HD.mpd",
+    "category": "Música",
+    "streamType": "dash",
+    "drm": {
+      "keyId": "0c9eb3ead38a122ac460ad96a8ebfd2e",
+      "key": "66bfbfa4449eb8bc1bcf7577d5bffaad"
+    },
+    "country": "AR",
+    "tvgId": "MTV.ar"
+  },
+  {
+    "id": "ch-_eventos_sin-chat__r_L2h0bWwvZmwvP2dldD1UVlJXTURBPQ__",
+    "name": "MTV 00s",
+    "logo": "https://bestleague.world/img/mtv00s.png",
+    "url": "https://cdn.cvattv.com.ar/live/c7eds/MTV00/SA_Live_dash_enc_C/MTV00.mpd",
+    "category": "Música",
+    "streamType": "dash",
+    "drm": {
+      "keyId": "1f0c09ed9e5841cf867ba6eb3cdfd61d",
+      "key": "802c89c6bae6a245aaafcf40c1986fc1"
+    },
+    "country": "AR",
+    "tvgId": "MTV.ar"
+  },
+  {
+    "id": "ch-_eventos_sin-chat__r_L2h0bWwvZmwvP2dldD1UVlJXWDBocGRITT0_",
+    "name": "MTV Hits",
+    "logo": "https://bestleague.world/img/mtvhts.webp",
+    "url": "https://cdn.cvattv.com.ar/live/c6eds/MTV_Hits/SA_Live_dash_enc_C/MTV_Hits.mpd",
+    "category": "Música",
+    "streamType": "dash",
+    "drm": {
+      "keyId": "61008dfc867544cd872de99b1f2b82cf",
+      "key": "716449756316b91c54803aaa22a2fbf0"
+    },
+    "country": "AR",
+    "tvgId": "MTVHits.ar"
+  },
+  {
+    "id": "ch-_en-vivo_canal10",
+    "name": "Canal 10",
+    "logo": "https://bestleague.world/img/canal10.webp",
+    "url": "https://cdn.cvattv.com.ar/live/c4eds/Canal10_URU/SA_Live_dash_enc_C/Canal10_URU.mpd",
+    "category": "Internacional",
+    "streamType": "dash",
+    "drm": {
+      "keyId": "8dd34782d754f8fcb1e8b38da9ffad0b",
+      "key": "6fb97467c0f0ea13f86d41a70e029c51"
+    },
+    "country": "UY",
+    "tvgId": "CANAL10.uy"
+  },
+  {
+    "id": "ch-_en-vivo_canal4uy",
+    "name": "Canal 4",
+    "logo": "https://bestleague.world/img/canal4uy.webp",
+    "url": "https://cdn.cvattv.com.ar/live/c4eds/Canal4_URU/SA_Live_dash_enc_C/Canal4_URU.mpd",
+    "category": "Internacional",
+    "streamType": "dash",
+    "drm": {
+      "keyId": "dabefaac89742589778fcfab78f08354",
+      "key": "896dd914683b01c8044ffd34d7b6416b"
+    },
+    "country": "UY",
+    "tvgId": "CANAL4.uy"
+  },
+  {
+    "id": "ch-_en-vivo_teledoce",
+    "name": "Teledoce",
+    "logo": "https://bestleague.world/img/teledoce.webp",
+    "url": "https://cdn.cvattv.com.ar/live/c4eds/Canal12URU/SA_Live_dash_enc_C/Canal12URU.mpd",
+    "category": "Internacional",
+    "streamType": "dash",
+    "drm": {
+      "keyId": "dfde9d35d7438bfdf61da5dfac0557c1",
+      "key": "acb13370c03a7254e2bb9cc9d2125017"
+    },
+    "country": "UY",
+    "tvgId": "LATELE.uy"
+  },
+  {
+    "id": "ch-_en-vivo_telemax",
+    "name": "Telemax",
+    "logo": "https://bestleague.world/img/telemax.webp",
+    "url": "https://cdn.cvattv.com.ar/live/c6eds/Telemax/SA_Live_dash_enc_C/Telemax.mpd",
+    "category": "Locales",
+    "streamType": "dash",
+    "drm": {
+      "keyId": "e7ec364ad6854fedad797538cb58780d",
+      "key": "57dfb3fca2ca35b37ff81c35595e9be8"
+    },
+    "country": "UY",
+    "tvgId": "Telemax.ar"
+  },
+  {
+    "id": "ch-_en-vivo_tv-ciudad",
+    "name": "TV Ciudad",
+    "logo": "https://bestleague.world/img/tvc.png",
+    "url": "https://cdn.cvattv.com.ar/live/c3eds/Teve_Ciudad/SA_Live_dash_enc_C/Teve_Ciudad.mpd",
+    "category": "Internacional",
+    "streamType": "dash",
+    "drm": {
+      "keyId": "9b536cd1716647ee94c45fa4836d29d6",
+      "key": "d691c88a95440666742d1d8183182347"
+    },
+    "country": "UY",
+    "tvgId": "TVCIUDAD.uy"
+  },
+  {
+    "id": "ch-_en-vivo_vtv",
+    "name": "VTV Uruguay",
+    "logo": "https://bestleague.world/img/vtv.webp",
+    "url": "https://cdn.cvattv.com.ar/live/c3eds/VTV_HD/SA_Live_dash_enc_C/VTV_HD.mpd",
+    "category": "Deportes",
+    "streamType": "dash",
+    "drm": {
+      "keyId": "b96960aa715a4e51b7e952e81c99ac8e",
+      "key": "5bbffc680764dbd63d90b774b3aa0c0a"
+    },
+    "country": "UY",
+    "tvgId": "VTV.uy"
+  },
+  {
+    "id": "ch-_en-vivo_vtv-plus",
+    "name": "VTV Plus Uruguay",
+    "logo": "https://bestleague.world/img/vtvplus.webp",
+    "url": "https://cdn.cvattv.com.ar/live/c3eds/VTV_Plus_HD/SA_Live_dash_enc_C/VTV_Plus_HD.mpd",
+    "category": "Deportes",
+    "streamType": "dash",
+    "drm": {
+      "keyId": "da8a49a594160cc0059f07b9f71cd39a",
+      "key": "37ca91dd799b351a02445151c7f61070"
+    },
+    "country": "UY",
+    "tvgId": "VTVPLUS.uy"
+  }
+]

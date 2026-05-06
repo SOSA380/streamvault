@@ -1,0 +1,17 @@
+{
+  "maintenance": false,
+  "sourceOffline": false,
+  "update": {
+    "available": true,
+    "version": "1.3.1",
+    "notes": [
+      "Se agrego una nueva fuente EPG para mostrar informacion mas precisa del programa.",
+      "Se agrego un botón para invitarme un cafecito y apoyar el proyecto.",
+      "Se recategorizaron los canales para una mejor experiencia.",
+      "Se agrego una pantalla inicial al arrancar la aplicacion.",
+      "Proximamente se agregaran nuevos canales de deportes premium.",
+      "Proximamente se agregaran nuevas fuentes para mejorar la estabilidad de la aplicacion.",
+      "Proximamente se implementara un sistema de reproduccion de listas M3U y Xtream locales."
+    ]
+  }
+}

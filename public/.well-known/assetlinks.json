@@ -1,0 +1,8 @@
+[{
+      "relation": ["delegate_permission/common.handle_all_urls"],
+      "target": {
+        "namespace": "android_app",
+        "package_name": "app.vercel.streamvault_beta.twa",
+        "sha256_cert_fingerprints": ["13:A1:F8:35:7E:70:30:93:78:3C:85:3E:A7:0E:09:9E:0F:31:49:57:3E:8B:B3:BD:49:8F:FA:13:74:F2:66:88"]
+      }
+    }]
