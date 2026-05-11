@@ -1,109 +1,89 @@
 import { useState, useEffect } from 'react'
-import { ShieldCheck, AlertTriangle, ExternalLink, Radio } from 'lucide-react'
+import { ShieldCheck, AlertTriangle, ExternalLink, Activity } from 'lucide-react'
 
 export function WelcomeModal({ onOpenTerms, onClose }) {
   const [isOpen, setIsOpen] = useState(false)
-  const [dontShowAgain, setDontShowAgain] = useState(true)
+  const [checked, setChecked] = useState(true)
 
   useEffect(() => {
-    const isHiddenForever = localStorage.getItem('maglinktv_hide_welcome') === 'true'
-    if (!isHiddenForever) setIsOpen(true)
+    if (localStorage.getItem('maglinktv_hide_welcome') !== 'true') setIsOpen(true)
   }, [])
 
   const handleAccept = () => {
-    if (dontShowAgain) localStorage.setItem('maglinktv_hide_welcome', 'true')
+    if (checked) localStorage.setItem('maglinktv_hide_welcome', 'true')
     setIsOpen(false)
-    if (onClose) onClose()
+    onClose?.()
   }
 
   if (!isOpen) return null
 
   return (
-    <div className="fixed inset-0 z-[9999] flex items-center justify-center p-4 bg-black/85 backdrop-blur-sm">
-      <div className="relative w-full max-w-xl bg-[#0d0d0e] border border-white/10 rounded-3xl shadow-[0_20px_60px_rgba(0,0,0,0.95)] overflow-hidden flex flex-col">
+    <div className="fixed inset-0 z-[9999] flex items-end sm:items-center justify-center p-4 sm:p-6"
+      style={{ background: 'rgba(2,4,8,0.85)', backdropFilter: 'blur(20px)' }}>
+
+      <div className="w-full max-w-xl animate-scale-in overflow-hidden rounded-[28px] glass-card relative">
+        {/* Glow Effects */}
+        <div className="absolute top-0 right-0 w-64 h-64 bg-accent/10 rounded-full blur-[80px] pointer-events-none" />
+        <div className="absolute bottom-0 left-0 w-64 h-64 bg-accent-3/10 rounded-full blur-[80px] pointer-events-none" />
+
+        {/* Top accent line */}
+        <div className="h-[2px] w-full" style={{ background: 'linear-gradient(90deg, transparent 0%, #00F0FF 50%, transparent 100%)' }} />
 
         {/* Header */}
-        <div className="bg-gradient-to-r from-accent/15 to-transparent p-6 flex items-center gap-4 border-b border-white/5">
-          <div className="w-12 h-12 rounded-full bg-accent/10 flex items-center justify-center border border-accent/30 shrink-0">
-            <ShieldCheck className="text-accent w-6 h-6" />
+        <div className="flex items-center gap-5 px-8 pt-8 pb-6 relative z-10">
+          <div className="w-12 h-12 rounded-2xl flex items-center justify-center shrink-0 v3-accent-bg v3-glow text-bg">
+            <ShieldCheck size={24} />
           </div>
           <div>
-            <h2 className="text-white text-lg font-black uppercase tracking-widest">MagLink TV</h2>
-            <p className="text-accent/80 text-xs font-bold uppercase tracking-widest mt-1">Aviso legal — Leé antes de continuar</p>
+            <h2 className="text-txt-1 text-xl font-bold tracking-tight">StreamVault</h2>
+            <p className="text-accent text-[11px] font-semibold tracking-[0.2em] uppercase mt-1">Aviso de Responsabilidad</p>
           </div>
         </div>
 
-        {/* Body */}
-        <div className="p-6 flex flex-col gap-4 text-white/70 text-sm leading-relaxed font-medium">
+        {/* Divider */}
+        <div className="h-px w-full" style={{ background: 'linear-gradient(90deg, transparent, rgba(255,255,255,0.1) 50%, transparent)' }} />
 
-          <div className="flex gap-3">
-            <Radio className="w-5 h-5 text-accent shrink-0 mt-0.5" />
-            <p>
-              <strong className="text-white">MagLink TV</strong> es un <strong className="text-white">reproductor multimedia</strong> que
-              indexa y reproduce streams de canales de televisión disponibles en internet, transmitidos en tiempo real
-              desde servidores de terceros.
+        {/* Body */}
+        <div className="px-8 py-6 flex flex-col gap-5 relative z-10">
+          <div className="flex gap-4 items-start p-4 rounded-2xl bg-white/[0.02] border border-white/[0.05]">
+            <Activity size={18} className="text-accent shrink-0 mt-0.5" />
+            <p className="text-txt-2 text-sm leading-relaxed font-light">
+              <span className="text-txt-1 font-medium">StreamVault</span> es un reproductor multimedia avanzado que indexa y reproduce streams de canales disponibles en internet desde servidores de terceros.
             </p>
           </div>
 
-          <div className="bg-amber-500/5 border border-amber-500/20 rounded-xl p-4 flex gap-3">
-            <AlertTriangle className="w-5 h-5 text-amber-400 shrink-0 mt-0.5" />
-            <div className="flex flex-col gap-2 text-xs">
-              <p className="text-white font-bold">Declaración de no responsabilidad</p>
-              <p>
-                MagLink TV <strong className="text-white">no aloja, no almacena ni distribuye</strong> ningún
-                canal de televisión ni contenido protegido por derechos de autor en sus servidores.
-                Los streams son transmitidos en tiempo real desde <strong className="text-white">servidores externos de terceros</strong>,
-                completamente ajenos a MagLink TV, y pueden interrumpirse sin previo aviso.
-              </p>
-              <p>
-                MagLink TV actúa como <strong className="text-white">cliente de reproducción</strong>, no como proveedor de contenido.
-                El usuario es el único responsable del uso que haga de esta aplicación y de los contenidos a los que
-                acceda mediante ella, de acuerdo a las leyes aplicables en su jurisdicción.
-              </p>
-              <p>
-                Al continuar, <strong className="text-white">aceptás estos términos</strong> y los{' '}
-                <button
-                  onClick={onOpenTerms}
-                  className="text-accent/80 hover:text-accent underline underline-offset-2 transition-colors"
-                >
-                  Términos y Condiciones
-                </button>{' '}
-                completos de la aplicación.
+          <div className="rounded-2xl p-5 flex gap-4 items-start relative overflow-hidden group">
+            <div className="absolute inset-0 bg-warning/10 transition-colors group-hover:bg-warning/15" />
+            <div className="absolute inset-0 border border-warning/20 rounded-2xl" />
+            <AlertTriangle size={20} className="text-warning shrink-0 mt-0.5 relative z-10" />
+            <div className="text-sm leading-relaxed relative z-10">
+              <p className="text-warning font-semibold mb-2">Aclaración Importante</p>
+              <p className="text-txt-2 font-light">StreamVault <span className="text-txt-1 font-medium">no aloja ni distribuye</span> contenido. Los streams provienen de servidores externos ajenos a esta app. Al continuar aceptas los{' '}
+                <button onClick={onOpenTerms} className="text-txt-1 font-medium underline underline-offset-4 decoration-accent/50 hover:decoration-accent transition-colors">Términos y Condiciones</button>.
               </p>
             </div>
           </div>
 
-          <p className="text-xs text-white/40 leading-relaxed">
-            Ante cualquier consulta legal escribinos a:{' '}
-            <span className="text-accent/60">legal@maglinktv.app</span>
-          </p>
-
-          <label className="flex items-center gap-2 cursor-pointer group mt-1">
-            <input
-              type="checkbox"
-              checked={dontShowAgain}
-              onChange={(e) => setDontShowAgain(e.target.checked)}
-              className="w-4 h-4 rounded border-white/20 bg-black/50 text-accent focus:ring-accent focus:ring-offset-black"
-            />
-            <span className="text-xs text-white/40 group-hover:text-white/70 transition-colors">
-              Leí y entendí el aviso. No volver a mostrar.
-            </span>
-          </label>
+          <div className="flex items-center justify-between mt-2">
+            <p className="text-xs text-txt-3">Consultas: <span className="text-txt-2">legal@streamvault.app</span></p>
+            <label className="flex items-center gap-3 cursor-pointer group">
+              <div className={`w-5 h-5 rounded-md border flex items-center justify-center transition-all ${checked ? 'bg-accent border-accent text-bg' : 'border-txt-3 text-transparent group-hover:border-txt-2'}`}>
+                <svg viewBox="0 0 14 14" fill="none" className="w-3.5 h-3.5"><path d="M3 7.5L5.5 10L11 4" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg>
+              </div>
+              <input type="checkbox" checked={checked} onChange={e => setChecked(e.target.checked)} className="hidden" />
+              <span className="text-sm text-txt-3 group-hover:text-txt-1 transition-colors">No volver a mostrar</span>
+            </label>
+          </div>
         </div>
 
         {/* Footer */}
-        <div className="p-6 pt-2 flex items-center justify-between gap-4">
-          <button
-            onClick={onOpenTerms}
-            className="text-xs text-white/25 hover:text-accent/60 transition-colors flex items-center gap-1"
-          >
-            <ExternalLink size={11} /> Términos y condiciones
+        <div className="px-8 pb-8 pt-2 flex items-center justify-between gap-4 relative z-10">
+          <button onClick={onOpenTerms} className="flex items-center gap-2 text-xs text-txt-3 hover:text-accent transition-colors font-medium">
+            <ExternalLink size={14} /> Leer Términos
           </button>
-          <button
-            onClick={handleAccept}
-            className="bg-accent text-black px-8 py-3 rounded-xl font-black uppercase tracking-widest text-xs hover:bg-accent/80 transition-colors shadow-[0_0_20px_rgba(0,243,255,0.3)] hover:shadow-[0_0_30px_rgba(0,243,255,0.5)]"
-          >
-            Entendido — Continuar
+          <button onClick={handleAccept}
+            className="px-8 py-3.5 rounded-2xl text-sm font-bold text-bg transition-all hover:scale-[1.02] active:scale-[0.98] v3-accent-bg v3-glow">
+            Entendido, Continuar
           </button>
         </div>
       </div>

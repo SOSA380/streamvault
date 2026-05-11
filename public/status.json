@@ -3,15 +3,12 @@
   "sourceOffline": false,
   "update": {
     "available": true,
-    "version": "1.3.1",
+    "version": "3.0",
     "notes": [
-      "Se agrego una nueva fuente EPG para mostrar informacion mas precisa del programa.",
-      "Se agrego un botón para invitarme un cafecito y apoyar el proyecto.",
-      "Se recategorizaron los canales para una mejor experiencia.",
-      "Se agrego una pantalla inicial al arrancar la aplicacion.",
-      "Proximamente se agregaran nuevos canales de deportes premium.",
-      "Proximamente se agregaran nuevas fuentes para mejorar la estabilidad de la aplicacion.",
-      "Proximamente se implementara un sistema de reproduccion de listas M3U y Xtream locales."
+      "Rediseño visual completo con una interfaz más limpia para IPTV.",
+      "Guía EPG optimizada para cargar más rápido en dispositivos viejos o con poca memoria.",
+      "Mejoras de rendimiento en el reproductor, logos y carga de programación.",
+      "Versión sincronizada entre el aviso de actualización y la pantalla inicial."
     ]
   }
 }

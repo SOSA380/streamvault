@@ -52,7 +52,7 @@ export default function App() {
   }, [])
 
   return (
-    <div className="h-screen w-screen bg-black overflow-hidden font-sans relative">
+    <div className="h-screen w-screen overflow-hidden relative bg-bg">
       {showSplash ? (
         <SplashScreen onFinish={() => setShowSplash(false)} />
       ) : status.maintenance ? (

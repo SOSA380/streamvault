@@ -2,90 +2,63 @@ import { useState, useEffect } from 'react'
 import { Download, X } from 'lucide-react'
 
 export function InstallPrompt() {
-  const [deferredPrompt, setDeferredPrompt] = useState(null)
-  const [isVisible, setIsVisible] = useState(false)
+  const [prompt, setPrompt] = useState(null)
+  const [visible, setVisible] = useState(false)
 
   useEffect(() => {
-    const handleBeforeInstallPrompt = (e) => {
-      // Evita que Chrome muestre el mini-infobar por defecto
+    const handler = (e) => {
       e.preventDefault()
-      // Guarda el evento para dispararlo más tarde
-      setDeferredPrompt(e)
-      
-      // Chequeamos si el usuario ya descartó el mensaje anteriormente
-      const hasDismissed = localStorage.getItem('maglinktv_dismissed_install') === 'true'
-      if (!hasDismissed) {
-        setIsVisible(true)
-      }
+      setPrompt(e)
+      if (localStorage.getItem('maglinktv_dismissed_install') !== 'true') setVisible(true)
     }
-
-    // Escuchamos el evento de instalación de la PWA
-    window.addEventListener('beforeinstallprompt', handleBeforeInstallPrompt)
-
-    // Escuchamos si la app se instala con éxito para ocultar el mensaje
-    window.addEventListener('appinstalled', () => {
-      setIsVisible(false)
-      setDeferredPrompt(null)
-      console.log('MagLink TV fue instalado exitosamente')
-    })
-
-    return () => {
-      window.removeEventListener('beforeinstallprompt', handleBeforeInstallPrompt)
-    }
+    window.addEventListener('beforeinstallprompt', handler)
+    window.addEventListener('appinstalled', () => { setVisible(false); setPrompt(null) })
+    return () => window.removeEventListener('beforeinstallprompt', handler)
   }, [])
 
-  const handleInstallClick = async () => {
-    if (!deferredPrompt) return
-
-    // Muestra el prompt nativo de instalación
-    deferredPrompt.prompt()
-
-    // Espera a que el usuario responda
-    const { outcome } = await deferredPrompt.userChoice
-    console.log(`User response to the install prompt: ${outcome}`)
-
-    // Limpiamos el prompt y ocultamos nuestra UI
-    setDeferredPrompt(null)
-    setIsVisible(false)
+  const install = async () => {
+    if (!prompt) return
+    prompt.prompt()
+    await prompt.userChoice
+    setPrompt(null); setVisible(false)
   }
 
-  const handleDismiss = () => {
-    setIsVisible(false)
+  const dismiss = () => {
+    setVisible(false)
     localStorage.setItem('maglinktv_dismissed_install', 'true')
   }
 
-  if (!isVisible) return null
+  if (!visible) return null
 
   return (
-    <div className="fixed top-6 left-1/2 -translate-x-1/2 z-[9999] transition-all duration-500 transform translate-y-0 opacity-100 w-max">
-      <div className="bg-[#0d0d0e]/95 backdrop-blur-md border border-accent/40 shadow-[0_15px_50px_rgba(0,243,255,0.25)] rounded-2xl p-4 pr-12 relative flex items-center gap-4 max-w-[90vw]">
-        
-        <div className="w-10 h-10 bg-accent/15 rounded-full flex items-center justify-center shrink-0 border border-accent/30 shadow-[0_0_15px_rgba(0,243,255,0.4)]">
-          <Download className="text-accent w-5 h-5" />
+    <div className="fixed top-5 left-1/2 -translate-x-1/2 z-[9999] animate-fade-up">
+      <div className="relative flex items-center gap-4 px-5 py-4 pr-12 rounded-2xl max-w-[90vw]"
+        style={{ background: 'rgba(7,13,26,0.95)', border: '1px solid rgba(0,229,255,0.25)', boxShadow: '0 16px 48px rgba(0,0,0,0.7), 0 0 0 1px rgba(0,229,255,0.05) inset', backdropFilter: 'blur(20px)' }}>
+
+        {/* Accent bar top */}
+        <div className="absolute top-0 left-6 right-6 h-px"
+          style={{ background: 'linear-gradient(90deg, transparent, rgba(0,229,255,0.5), transparent)' }} />
+
+        <div className="w-9 h-9 rounded-xl flex items-center justify-center shrink-0"
+          style={{ background: 'rgba(0,229,255,0.1)', border: '1px solid rgba(0,229,255,0.2)' }}>
+          <Download size={16} className="text-accent" />
         </div>
 
         <div className="flex flex-col">
-          <h3 className="text-white text-sm font-black uppercase tracking-widest drop-shadow-md">
-            Instalar App
-          </h3>
-          <p className="text-white/70 text-[11px] font-bold mt-0.5 max-w-[200px] leading-tight">
-            Instala MagLink TV en tu dispositivo para una mejor experiencia.
+          <p className="text-txt-1 text-[13px] font-semibold">Instalar MagLink TV</p>
+          <p className="text-txt-2 text-[11px] font-normal mt-0.5 max-w-[180px] leading-snug">
+            Instalá la app para una experiencia más fluida.
           </p>
-
-          <button
-            onClick={handleInstallClick}
-            className="mt-3 flex items-center justify-center gap-2 bg-accent hover:bg-accent/80 text-black px-5 py-2 rounded-xl text-[11px] font-black uppercase tracking-widest transition-all w-max shadow-[0_0_15px_rgba(0,243,255,0.3)] hover:scale-105 active:scale-95"
-          >
-            <Download size={14} />
-            Instalar
+          <button onClick={install}
+            className="mt-3 self-start flex items-center gap-1.5 px-4 py-1.5 rounded-lg text-[11px] font-semibold text-bg transition-all hover:scale-[1.03] active:scale-[0.97]"
+            style={{ background: 'linear-gradient(135deg, #00E5FF, #00B8CC)' }}>
+            <Download size={11} /> Instalar
           </button>
         </div>
 
-        <button
-          onClick={handleDismiss}
-          className="absolute top-3 right-3 text-white/30 hover:text-white transition-colors p-1"
-        >
-          <X size={16} />
+        <button onClick={dismiss}
+          className="absolute top-3 right-3 w-7 h-7 flex items-center justify-center rounded-lg text-txt-3 hover:text-txt-1 hover:bg-white/5 transition-all">
+          <X size={14} />
         </button>
       </div>
     </div>

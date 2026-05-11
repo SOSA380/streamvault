@@ -1,4 +1,4 @@
-import { useState, useMemo, useEffect } from 'react'
+import { useState, useMemo, useEffect, useCallback } from 'react'
 import channels from '../data/premiumChannels_clean.json'
 import { applyFilters, getRecentChannels, getChannelGroup } from '../utils/channelFilters'
 
@@ -35,16 +35,16 @@ export function useChannels() {
     localStorage.setItem('maglinktv_recents', JSON.stringify(recentIds))
   }, [recentIds])
 
-  const addRecent = (channelId) => {
+  const addRecent = useCallback((channelId) => {
     setRecentIds(prev => {
       return [channelId, ...prev.filter(id => id !== channelId)].slice(0, 20)
     })
-  }
+  }, [])
 
-  const clearRecents = () => {
+  const clearRecents = useCallback(() => {
     setRecentIds([])
     localStorage.removeItem('maglinktv_recents')
-  }
+  }, [])
 
   const [favoriteIds, setFavoriteIds] = useState(() => {
     try {
@@ -58,15 +58,15 @@ export function useChannels() {
     localStorage.setItem('maglinktv_favorites', JSON.stringify(favoriteIds))
   }, [favoriteIds])
 
-  const toggleFavorite = (channelId) => {
+  const toggleFavorite = useCallback((channelId) => {
     setFavoriteIds(prev => 
       prev.includes(channelId) 
         ? prev.filter(id => id !== channelId) 
         : [...prev, channelId]
     )
-  }
+  }, [])
 
-  const isFavorite = (channelId) => favoriteIds.includes(channelId)
+  const isFavorite = useCallback((channelId) => favoriteIds.includes(channelId), [favoriteIds])
 
   const filteredChannels = useMemo(() => {
     if (activeFilter === 'Favoritos') {

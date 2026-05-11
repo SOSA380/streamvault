@@ -23,6 +23,21 @@ function parseXmlTime(str) {
   return date
 }
 
+function decodeXml(value = '') {
+  return value
+    .replace(/&quot;/g, '"')
+    .replace(/&apos;/g, "'")
+    .replace(/&lt;/g, '<')
+    .replace(/&gt;/g, '>')
+    .replace(/&amp;/g, '&')
+    .trim()
+}
+
+function getTagValue(block, tag) {
+  const match = block.match(new RegExp(`<${tag}(?:\\s[^>]*)?>([\\s\\S]*?)<\\/${tag}>`, 'i'))
+  return match ? decodeXml(match[1]) : ''
+}
+
 export function useEpg(channels) {
   const [epgData, setEpgData] = useState({})
   const [loading, setLoading] = useState(true)
@@ -34,11 +49,13 @@ export function useEpg(channels) {
 
         const cacheKey = 'maglinktv_epg_cache'
         const cacheTimeKey = 'maglinktv_epg_cache_time'
+        const now = Date.now()
+        const minTime = now - 2 * 60 * 60 * 1000
+        const maxTime = now + 30 * 60 * 60 * 1000
         
         try {
           const cachedTime = sessionStorage.getItem(cacheTimeKey)
-          // Cache disabled temporarily for debugging
-          if (false && cachedTime && (Date.now() - parseInt(cachedTime)) < 3600000) {
+          if (cachedTime && (now - parseInt(cachedTime)) < 1800000) {
             const cachedData = sessionStorage.getItem(cacheKey)
             if (cachedData) {
               const parsed = JSON.parse(cachedData)
@@ -51,7 +68,6 @@ export function useEpg(channels) {
               })
               setEpgData(parsed)
               setLoading(false)
-              console.log('EPG loaded from cache')
               return
             }
           }
@@ -70,50 +86,41 @@ export function useEpg(channels) {
         if (!res.ok) throw new Error('EPG not found')
 
         const xmlText = await res.text()
-        const parser = new DOMParser()
-        const xmlDoc = parser.parseFromString(xmlText, 'text/xml')
-
-        const programmeNodes = xmlDoc.getElementsByTagName('programme')
-        if (!programmeNodes || programmeNodes.length === 0) {
-          console.warn('EPG vacío o inválido')
-          return
-        }
-
         const parsedData = {}
+        const programmeRe = /<programme\s+([^>]*)>([\s\S]*?)<\/programme>/g
+        let match
+        let total = 0
 
-        for (let i = 0; i < programmeNodes.length; i++) {
-          const node = programmeNodes[i]
-          const xmlChId = node.getAttribute('channel')
-          
-          // Skip if the channel id is not in our premiumChannels_clean list
+        while ((match = programmeRe.exec(xmlText)) !== null) {
+          const attrs = match[1]
+          const block = match[2]
+          const xmlChId = attrs.match(/channel="([^"]+)"/)?.[1]
           if (!xmlChId || !validIds.has(xmlChId)) continue
 
+          const start = parseXmlTime(attrs.match(/start="([^"]+)"/)?.[1])
+          const end = parseXmlTime(attrs.match(/stop="([^"]+)"/)?.[1])
+          if (end.getTime() < minTime || start.getTime() > maxTime) continue
+
           if (!parsedData[xmlChId]) parsedData[xmlChId] = []
-
-          const getVal = tag => {
-            const n = node.getElementsByTagName(tag)[0]
-            return n ? n.textContent.trim() : ''
-          }
-
           parsedData[xmlChId].push({
-            title:    getVal('title') || 'Programa',
-            desc:     getVal('desc'),
-            start:    parseXmlTime(node.getAttribute('start')),
-            end:      parseXmlTime(node.getAttribute('stop')),
-            category: getVal('category') || 'General',
+            title:    getTagValue(block, 'title') || 'Programa',
+            desc:     getTagValue(block, 'desc'),
+            start,
+            end,
+            category: getTagValue(block, 'category') || 'General',
           })
+          total++
         }
 
         Object.keys(parsedData).forEach(id => {
           parsedData[id].sort((a, b) => a.start - b.start)
         })
 
-        const total = Object.values(parsedData).reduce((acc, v) => acc + v.length, 0)
-        console.log(`EPG cargado: ${Object.keys(parsedData).length} canales, ${total} programas`)
+        if (total === 0) console.warn('EPG vacío o fuera de la ventana horaria')
 
         try {
           sessionStorage.setItem(cacheKey, JSON.stringify(parsedData))
-          sessionStorage.setItem(cacheTimeKey, Date.now().toString())
+          sessionStorage.setItem(cacheTimeKey, now.toString())
         } catch (e) {
           console.warn('Failed to save EPG cache', e)
         }

@@ -1,78 +1,60 @@
-import React, { useEffect, useState } from 'react'
-import splashImage from '../preview-removebg-preview.png'
+import { useEffect, useState } from 'react'
+import { Loader2 } from 'lucide-react'
+import previewLogo from './preview.webp'
 
 export function SplashScreen({ onFinish }) {
-  const [visible, setVisible] = useState(false)
-  const [out, setOut] = useState(false)
+  const [phase, setPhase] = useState(0) // 0=hidden, 1=visible, 2=out
+  const [version, setVersion] = useState('3.0.0')
 
   useEffect(() => {
-    const t1 = setTimeout(() => setVisible(true), 60)
-    const t2 = setTimeout(() => setOut(true), 2800)
-    const t3 = setTimeout(() => onFinish(), 3500)
+    const t1 = setTimeout(() => setPhase(1), 80)
+    const t2 = setTimeout(() => setPhase(2), 2800)
+    const t3 = setTimeout(() => onFinish(), 3400)
     return () => { clearTimeout(t1); clearTimeout(t2); clearTimeout(t3) }
   }, [onFinish])
 
+  useEffect(() => {
+    let active = true
+    fetch(`/status.json?t=${Date.now()}`)
+      .then(r => r.ok ? r.json() : null)
+      .then(d => { if (active && d?.update?.version) setVersion(d.update.version) })
+      .catch(() => {})
+    return () => { active = false }
+  }, [])
+
   return (
     <div
-      className={`fixed inset-0 z-[9999] flex flex-col items-center justify-center bg-black overflow-hidden
-        transition-opacity duration-700 ease-in-out
-        ${out ? 'opacity-0 pointer-events-none' : 'opacity-100'}`}
+      className="fixed inset-0 z-[9999] flex flex-col items-center justify-center overflow-hidden"
+      style={{
+        backgroundColor: 'rgba(5, 5, 5, 0.9)',
+        opacity: phase === 2 ? 0 : 1,
+        transition: 'opacity 0.8s cubic-bezier(0.4, 0, 0.2, 1)',
+        pointerEvents: phase === 2 ? 'none' : 'all',
+      }}
     >
-      {/* Glow radial igual que MaintenanceScreen */}
-      <div className="absolute inset-0 bg-gradient-radial from-accent/5 via-transparent to-transparent pointer-events-none" />
+      {/* Background Image (Unified) */}
+      <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+        <img src={previewLogo} alt="" className="w-full h-full object-cover opacity-40 scale-105" />
+      </div>
 
-      <div className="relative z-10 flex flex-col items-center gap-10">
-
-        {/* Logo grande */}
-        <div
-          style={{
-            opacity: visible ? 1 : 0,
-            transform: visible ? 'scale(1) translateY(0)' : 'scale(0.88) translateY(24px)',
-            transition: 'opacity 0.9s cubic-bezier(0.22,1,0.36,1), transform 0.9s cubic-bezier(0.22,1,0.36,1)',
-          }}
-        >
-          <img
-            src={splashImage}
-            alt="MagLink TV"
-            className="w-85 h-auto object-contain drop-shadow-[0_0_80px_rgba(0,243,255,0.5)]"
-          />
+      <div className="relative z-10 flex flex-col items-center text-center px-6 gap-6 max-w-md w-full">
+        {/* Brand Text */}
+        <div className="flex flex-col items-center gap-2">
+          <h1 className="text-4xl font-black uppercase tracking-widest text-white">
+            MagLink TV
+          </h1>
+          <span className="text-accent/60 text-xs font-bold tracking-[0.3em] uppercase mt-1">
+            v{version}
+          </span>
         </div>
 
-        {/* Versión */}
-        <p
-          className="text-white/25 text-xs font-bold uppercase tracking-widest -my-4"
-          style={{
-            opacity: visible ? 1 : 0,
-            transition: 'opacity 0.5s ease 0.2s',
-          }}
-        >
-          1.3.1
-        </p>
-
-        {/* Spinner */}
-        <div
-          style={{
-            opacity: visible ? 1 : 0,
-            transition: 'opacity 0.5s ease 0.3s',
-          }}
-        >
-          <svg
-            className="animate-spin"
-            width="26" height="26"
-            viewBox="0 0 26 26"
-            fill="none"
-          >
-            <circle cx="13" cy="13" r="10" stroke="rgba(255,255,255,0.08)" strokeWidth="2.5" />
-            <path
-              d="M13 3 A10 10 0 0 1 23 13"
-              stroke="#00E5FF"
-              strokeWidth="2.5"
-              strokeLinecap="round"
-              style={{ filter: 'drop-shadow(0 0 4px rgba(0,229,255,0.9))' }}
-            />
-          </svg>
+        {/* Loading UI */}
+        <div className="flex flex-col items-center gap-4">
+          <Loader2 className="w-8 h-8 text-accent animate-spin" strokeWidth={2.5} />
+          <span className="text-[10px] uppercase tracking-[0.2em] text-white/30 font-bold">
+            Cargando...
+          </span>
         </div>
-
       </div>
     </div>
   )

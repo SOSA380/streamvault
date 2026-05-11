@@ -1,103 +1,81 @@
 import { useState, useEffect, useRef } from 'react'
-import { Rocket, X } from 'lucide-react'
+import { Rocket, X, ExternalLink } from 'lucide-react'
 
 export function UpdateNotification({ updateData }) {
   const [isOpen, setIsOpen] = useState(false)
-  const dismissedRef = useRef(false)
+  const dismissed = useRef(false)
 
   useEffect(() => {
-    if (updateData?.available && !dismissedRef.current) {
-      setIsOpen(true)
-    } else if (!updateData?.available) {
-      // Si el admin lo desactiva, resetear para la próxima vez
-      setIsOpen(false)
-      dismissedRef.current = false
-    }
+    if (updateData?.available && !dismissed.current) setIsOpen(true)
+    else if (!updateData?.available) { setIsOpen(false); dismissed.current = false }
   }, [updateData])
 
-  const handleClose = () => {
-    dismissedRef.current = true
-    setIsOpen(false)
-  }
+  const close = () => { dismissed.current = true; setIsOpen(false) }
 
   if (!isOpen) return null
 
   return (
-    <div className="fixed inset-0 z-[9998] flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm animate-[fadeIn_0.2s_ease]">
-      <div className="relative w-full max-w-md bg-[#0d0d0e] border border-white/10 rounded-3xl shadow-[0_20px_60px_rgba(0,0,0,0.95)] overflow-hidden flex flex-col animate-[scaleIn_0.25s_cubic-bezier(0.34,1.56,0.64,1)]">
+    <div className="fixed inset-0 z-[9998] flex items-center justify-center p-4 animate-fade-in"
+      style={{ background: 'rgba(4,8,15,0.85)', backdropFilter: 'blur(12px)' }}>
+
+      <div className="w-full max-w-sm animate-scale-in rounded-2xl overflow-hidden"
+        style={{ background: 'linear-gradient(160deg, #0C1525 0%, #070D1A 100%)', border: '1px solid rgba(255,255,255,0.07)', boxShadow: '0 32px 80px rgba(0,0,0,0.8)' }}>
+
+        {/* Top accent line */}
+        <div className="h-px" style={{ background: 'linear-gradient(90deg, transparent, rgba(0,229,255,0.6), transparent)' }} />
+
+        {/* Close */}
+        <button onClick={close} className="absolute top-4 right-4 w-7 h-7 flex items-center justify-center rounded-lg text-txt-3 hover:text-txt-1 hover:bg-white/5 transition-all">
+          <X size={15} />
+        </button>
 
         {/* Header */}
-        <div className="bg-gradient-to-r from-accent/15 to-transparent p-6 flex items-center gap-4 border-b border-white/5">
-          <div className="w-12 h-12 rounded-full bg-accent/10 flex items-center justify-center border border-accent/30 shrink-0">
-            <Rocket className="text-accent w-6 h-6" />
+        <div className="flex items-center gap-4 px-6 pt-6 pb-5">
+          <div className="w-10 h-10 rounded-xl flex items-center justify-center shrink-0"
+            style={{ background: 'rgba(0,229,255,0.1)', border: '1px solid rgba(0,229,255,0.2)' }}>
+            <Rocket size={17} className="text-accent" />
           </div>
           <div>
-            <h2 className="text-white text-lg font-black uppercase tracking-widest">Actualización disponible</h2>
-            {updateData?.version && (
-              <p className="text-accent/80 text-xs font-bold uppercase tracking-widest mt-1">
-                Versión {updateData.version}
-              </p>
-            )}
+            <h2 className="text-txt-1 text-[15px] font-semibold">Actualización disponible</h2>
+            {updateData?.version && <p className="text-accent text-[11px] font-medium tracking-wider mt-0.5">v{updateData.version}</p>}
           </div>
         </div>
 
-        {/* Body */}
-        <div className="p-6 flex flex-col gap-4 text-white/70 text-sm leading-relaxed font-medium">
-          <p className="text-white/50 text-xs">Hay una nueva versión de <strong className="text-white">MagLink TV</strong> disponible. Estas son las novedades:</p>
+        <div className="h-px mx-6" style={{ background: 'rgba(255,255,255,0.05)' }} />
 
+        {/* Body */}
+        <div className="px-6 py-5 flex flex-col gap-3">
+          <p className="text-txt-3 text-[12px]">Hay una nueva versión de <span className="text-txt-1 font-medium">MagLink TV</span> disponible:</p>
           {updateData?.notes?.length > 0 && (
-            <ul className="flex flex-col gap-2">
-              {updateData.notes.map((note, idx) => (
-                <li key={idx} className="flex gap-2 text-[13px]">
-                  <span className="text-accent shrink-0">•</span>
-                  <span>{note}</span>
+            <ul className="flex flex-col gap-1.5">
+              {updateData.notes.map((n, i) => (
+                <li key={i} className="flex gap-2 text-[12px] text-txt-2">
+                  <span className="text-accent shrink-0 mt-px">•</span> {n}
                 </li>
               ))}
             </ul>
           )}
-        </div>
 
-        {/* Cafecito donation */}
-        <div className="mx-6 mb-4 rounded-2xl border border-white/5 bg-white/[0.03] p-4 flex flex-col gap-3">
-          <div className="flex flex-col gap-1">
-            <p className="text-white text-xs font-bold">¿Te gusta MagLink TV?</p>
-            <p className="text-white/40 text-[11px] leading-relaxed">
-              Es un proyecto independiente mantenido con mucho esfuerzo. Si querés apoyarlo, invitame un café ☕
-            </p>
+          {/* Cafecito */}
+          <div className="rounded-xl p-4 flex flex-col gap-3 mt-1"
+            style={{ background: 'rgba(255,255,255,0.025)', border: '1px solid rgba(255,255,255,0.05)' }}>
+            <p className="text-txt-1 text-[12px] font-medium">¿Te gusta MagLink TV? ☕</p>
+            <p className="text-txt-3 text-[11px] leading-relaxed">Es un proyecto independiente. Si querés apoyarlo, podés invitarme un café.</p>
+            <a href="https://cafecito.app/donacionesmaglinktv" target="_blank" rel="noopener"
+              className="self-start flex items-center gap-1.5 text-[11px] text-accent font-medium hover:text-accent-2 transition-colors">
+              <ExternalLink size={11} /> Invitar un café
+            </a>
           </div>
-          <a
-            href="https://cafecito.app/donacionesmaglinktv"
-            rel="noopener"
-            target="_blank"
-            className="self-center opacity-90 hover:opacity-100 transition-opacity hover:scale-105 transform"
-            title="Invitame un café en cafecito.app"
-          >
-            <img
-              srcSet="https://cdn.cafecito.app/imgs/buttons/button_1.png 1x, https://cdn.cafecito.app/imgs/buttons/button_1_2x.png 2x, https://cdn.cafecito.app/imgs/buttons/button_1_3.75x.png 3.75x"
-              src="https://cdn.cafecito.app/imgs/buttons/button_1.png"
-              alt="Invitame un café en cafecito.app"
-              className="h-9 w-auto"
-            />
-          </a>
         </div>
 
         {/* Footer */}
-        <div className="p-6 pt-2 flex justify-end">
-          <button
-            onClick={handleClose}
-            className="bg-accent text-black px-8 py-3 rounded-xl font-black uppercase tracking-widest text-xs hover:bg-accent/80 transition-colors shadow-[0_0_20px_rgba(0,243,255,0.3)] hover:shadow-[0_0_30px_rgba(0,243,255,0.5)]"
-          >
+        <div className="px-6 pb-6 flex justify-end">
+          <button onClick={close}
+            className="px-6 py-2.5 rounded-xl text-[12px] font-semibold text-bg transition-all hover:scale-[1.02] active:scale-[0.98]"
+            style={{ background: 'linear-gradient(135deg, #00E5FF, #00B8CC)', boxShadow: '0 0 20px rgba(0,229,255,0.25)' }}>
             Entendido
           </button>
         </div>
-
-        {/* X button */}
-        <button
-          onClick={handleClose}
-          className="absolute top-4 right-4 text-white/30 hover:text-white transition-colors"
-        >
-          <X size={18} />
-        </button>
       </div>
     </div>
   )

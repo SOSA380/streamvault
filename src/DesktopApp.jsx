@@ -9,7 +9,7 @@ export function DesktopApp() {
   const {
     filteredChannels, activeFilter, setActiveFilter,
     searchQuery, setSearchQuery, recentIds, addRecent, clearRecents,
-    toggleFavorite, isFavorite
+    toggleFavorite, isFavorite, favoriteIds,
   } = useChannels()
 
   const { epgData } = useEpg(channels)
@@ -45,7 +45,7 @@ export function DesktopApp() {
     searchQuery, setSearchQuery,
     activeFilter, setActiveFilter,
     onChannelClick: handleChannelClick,
-    toggleFavorite, isFavorite,
+    toggleFavorite, isFavorite, favoriteIds,
   }
 
   return (

@@ -1,51 +1,59 @@
 import { useState } from 'react'
 import { RefreshCw, ServerOff } from 'lucide-react'
-import previewImg from './preview.webp'
+import previewLogo from './preview.webp'
 
 export function SourceOfflineScreen() {
-  const [isReloading, setIsReloading] = useState(false)
+  const [loading, setLoading] = useState(false)
 
   return (
-    <div className="fixed inset-0 flex flex-col items-center justify-center bg-black z-[9999] p-4 text-center font-sans overflow-hidden">
-      <img src={previewImg} className="absolute inset-0 w-full h-full object-cover blur-2xl opacity-20 z-0 pointer-events-none" />
-      <div className="absolute inset-0 bg-gradient-radial from-amber-500/5 via-transparent to-transparent z-0 pointer-events-none" />
+    <div className="fixed inset-0 z-[9999] flex items-center justify-center overflow-hidden"
+      style={{ backgroundColor: 'rgba(5, 5, 5, 0.9)' }}>
 
-      <div className="relative z-10 flex flex-col items-center w-full max-w-xl px-6 gap-4">
+      {/* Background Image */}
+      <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+        <img src={previewLogo} alt="" className="w-full h-full object-cover opacity-40 scale-105" />
+      </div>
+
+      <div className="relative z-10 flex flex-col items-center text-center px-6 gap-6 max-w-md w-full">
 
         {/* Icon */}
-        <div className="w-16 h-16 rounded-2xl bg-amber-500/10 border border-amber-500/25 flex items-center justify-center mb-2 shadow-[0_0_30px_rgba(245,158,11,0.08)]">
-          <ServerOff className="w-7 h-7 text-amber-400" />
+        <div className="relative">
+          <div className="absolute inset-0 scale-150 rounded-full"
+            style={{ background: 'radial-gradient(circle, rgba(0,229,255,0.06) 0%, transparent 70%)' }} />
+          <div className="relative w-16 h-16 rounded-2xl flex items-center justify-center"
+            style={{ background: 'rgba(0,229,255,0.08)', border: '1px solid rgba(0,229,255,0.2)' }}>
+            <ServerOff size={26} className="text-accent" />
+          </div>
         </div>
 
-        <h1 className="text-white font-black uppercase tracking-widest text-2xl md:text-3xl drop-shadow-md">
-          Fuente Temporalmente Caída
-        </h1>
-
-        <p className="text-white/70 leading-relaxed text-sm md:text-base max-w-md">
-          Los servidores externos de terceros que proveen los streams están fuera de servicio
-          en este momento. Intentá de nuevo más tarde.
-        </p>
-
-        {/* Legal note */}
-        <div className="bg-white/[0.04] border border-white/10 rounded-xl p-4 text-left max-w-md w-full">
-          <p className="text-white/40 text-[11px] leading-relaxed">
-            <strong className="text-white/60">Recordatorio:</strong>{' '}
-            MagLink TV actúa exclusivamente como cliente de reproducción. No controla,
-            opera ni es responsable de la disponibilidad, continuidad ni estado de los
-            servidores externos de terceros desde los cuales se transmite el contenido.
+        {/* Text */}
+        <div className="flex flex-col gap-3">
+          <h1 className="text-white text-2xl font-black uppercase tracking-widest">Señal No Disponible</h1>
+          <p className="text-slate-200 text-sm font-medium leading-relaxed max-w-sm drop-shadow-md">
+            Este stream proviene de servidores externos ajenos a MagLink TV y no pudo cargarse en este momento. Probá otro canal o intentá de nuevo más tarde.
           </p>
         </div>
 
+        {/* Legal note */}
+        <div className="w-full rounded-xl p-4 text-left"
+          style={{ background: 'rgba(255,255,255,0.025)', border: '1px solid rgba(255,255,255,0.06)' }}>
+          <p className="text-slate-300 text-[11px] leading-relaxed">
+            <span className="text-white/60 font-semibold">Recordatorio: </span>
+            MagLink TV actúa como cliente de reproducción y no controla ni opera los servidores externos desde los cuales se transmite el contenido.
+          </p>
+        </div>
+
+        {/* Button */}
         <button
-          onClick={() => { setIsReloading(true); setTimeout(() => window.location.reload(), 300) }}
-          className="mt-2 flex items-center justify-center gap-2 bg-white/5 hover:bg-white/10 text-white px-8 py-3 rounded-xl text-[11px] font-black uppercase tracking-widest transition-colors border border-white/10"
-        >
-          <RefreshCw size={14} className={isReloading ? 'animate-spin' : ''} />
+          onClick={() => { setLoading(true); setTimeout(() => window.location.reload(), 300) }}
+          className="flex items-center gap-2 px-7 py-3 rounded-xl text-[12px] font-medium transition-all hover:scale-[1.02] active:scale-[0.98]"
+          style={{ background: 'rgba(255,255,255,0.05)', border: '1px solid rgba(255,255,255,0.1)', color: 'rgba(255,255,255,0.8)' }}>
+          <RefreshCw size={14} className={loading ? 'animate-spin' : ''} />
           Verificar conexión
         </button>
 
-        <p className="text-white/20 text-[10px] tracking-widest font-bold uppercase mt-4">
-          © 2026 MagLink TV · Status: Source Down
+        <p className="text-txt-3 text-[10px] tracking-widest uppercase font-medium">
+          © 2026 MagLink TV
         </p>
       </div>
     </div>
